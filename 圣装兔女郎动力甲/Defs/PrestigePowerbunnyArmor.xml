@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ThingDef ParentName="ApparelArmorPowerBase">
+    <defName>Luna_PrestigePowerbunnyArmor</defName>
+    <label>Prestige PowerBunny armor</label>
+    <description>Armored and powered Bunny suit.</description>
+    <recipeMaker>
+      <displayPriority>50</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Luna/Apparel/PrestigePowered/BunnyGirlPoweredWhite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Luna/Apparel/PrestigePowered/BunnyGirlPoweredWhite</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+	    <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costList>
+      <Gold>10</Gold>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>100</Plasteel>
+      <Uranium>20</Uranium>
+    </costList>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LunaAddShippingContainer" Name="LunaFridgeAddShippingContainer" Abstract="True" MayRequire="lunaglaze.rimfridge.lwmds.add">
+       <building>
+        <preventDeteriorationInside>true</preventDeteriorationInside>
+        <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+        <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+        <maxItemsInCell>3</maxItemsInCell>
+        <fixedStorageSettings>
+         <filter>
+          <categories>
+           <li>AnimalProductRaw</li>
+           <li>Corpses</li>
+           <li>Drugs</li>
+           <li>EggsFertilized</li>
+           <li>EggsUnfertilized</li>
+           <li>Foods</li>
+           <li>Medicine</li>
+           <li>PlantMatter</li>
+           <li>PlantFoodRaw</li>
+           <li>BodyParts</li>
+          </categories>
+          <thingDefs MayRequire="Ludeon.RimWorld.Biotech">
+           <li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
+          </thingDefs>
+          <specialFiltersToDisallow>
+           <li>AllowRotten</li>
+          </specialFiltersToDisallow>
+         </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings>
+         <priority>Important</priority>
+         <filter>
+          <categories>
+           <li>FoodMeals</li>
+          </categories>
+          <disallowedThingDefs>
+           <li>MealSurvivalPack</li>
+          </disallowedThingDefs>
+         </filter>
+        </defaultStorageSettings>
+        <isHopper>true</isHopper>
+       </building>
+       <comps>
+         <li Class="CompProperties_Flickable"/>
+         <li Class="CompProperties_Breakdownable"/>
+         <li Class="RimFridge.CompProperties_ToggleGlower">
+          <glowRadius>2.5</glowRadius>
+          <glowColor>(89,188,255,0)</glowColor>
+         </li>
+         <li Class="RimFridge.CompProperties_Refrigerator">
+          <drinksBestCold>
+           <li>Beer</li>
+           <li>RC2_Ale</li>
+           <li>RC2_Cider</li>
+           <li>RC2_Grog</li>
+           <li>RC2_Stout</li>
+          </drinksBestCold>
+          <findAllRottableForFilters>true</findAllRottableForFilters>
+         </li>
+         <li Class="CompProperties_Power">
+          <compClass>CompPowerTrader</compClass>
+          <basePowerConsumption>500</basePowerConsumption>
+          <powerUpgrades>
+           <li>
+            <researchProject>RimFridge_PowerFactorSetting</researchProject>
+            <factor>1.0</factor>
+           </li>
+          </powerUpgrades>
+         </li>
+       </comps>
+       <researchPrerequisites>
+        <li>Luna_LWMrimfridgeadd</li>
+       </researchPrerequisites>
+  </ThingDef>
+
+  	<!-- ==================== Shipping Container Red ==================== -->  
+  
+  <ThingDef ParentName="LunaFridgeAddShippingContainer" MayRequire="lunaglaze.rimfridge.lwmds.add">
+    <defName>LunaAddShippingContainerRed_Refrigerated</defName>
+    <label>Compressed Refrigerated ShippingContainer Red</label>
+    <graphicData>
+      <texPath>Things/ShippingContainerRed/Shipping_Container_Red</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerRed/Shipping_Container_Red_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+  </ThingDef>  
+
+	<!-- ==================== Shipping Container Blue ==================== -->  
+  
+  <ThingDef ParentName="LunaFridgeAddShippingContainer" MayRequire="lunaglaze.rimfridge.lwmds.add">
+    <defName>LunaAddShippingContainerBlue_Refrigerated</defName>
+    <label>Compressed Refrigerated ShippingContainer Blue</label>
+    <graphicData>
+      <texPath>Things/ShippingContainerBlue/Shipping_Container_Blue</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerBlue/Shipping_Container_Blue_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+  </ThingDef>  
+
+	<!-- ==================== Shipping Container Green ==================== -->  
+  
+  <ThingDef ParentName="LunaFridgeAddShippingContainer" MayRequire="lunaglaze.rimfridge.lwmds.add">
+    <defName>LunaAddShippingContainerGreen_Refrigerated</defName>
+    <label>Compressed Refrigerated ShippingContainer Green</label>
+    <graphicData>
+      <texPath>Things/ShippingContainerGreen/Shipping_Container_Green</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerGreen/Shipping_Container_Green_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+  </ThingDef>  
+
+</Defs>

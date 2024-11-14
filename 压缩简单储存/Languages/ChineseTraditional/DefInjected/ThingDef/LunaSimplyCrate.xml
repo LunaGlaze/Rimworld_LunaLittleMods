@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Luna_Add1ResourcesCrate.label>緊湊資源箱（原木）</Luna_Add1ResourcesCrate.label>
+  <Luna_Add1ResourcesCrate.description>可以儲存50組原木</Luna_Add1ResourcesCrate.description>
+
+  <Luna_Add2ResourcesCrate.label>緊湊資源箱（鋼鐵）</Luna_Add2ResourcesCrate.label>
+  <Luna_Add2ResourcesCrate.description>可以儲存50組鋼鐵</Luna_Add2ResourcesCrate.description>
+
+  <Luna_Add3ResourcesCrate.label>緊湊資源箱（織物）</Luna_Add3ResourcesCrate.label>
+  <Luna_Add3ResourcesCrate.description>可以儲存50組織物</Luna_Add3ResourcesCrate.description>
+
+  <Luna_Add4ResourcesCrate.label>緊湊資源箱（皮革）</Luna_Add4ResourcesCrate.label>
+  <Luna_Add4ResourcesCrate.description>可以儲存50組皮革</Luna_Add4ResourcesCrate.description>
+
+  <Luna_Add5ResourcesCrate.label>緊湊資源箱（零件）</Luna_Add5ResourcesCrate.label>
+  <Luna_Add5ResourcesCrate.description>可以儲存50組零件</Luna_Add5ResourcesCrate.description>
+
+  <Luna_Add6ResourcesCrate.label>緊湊資源箱（高級零件）</Luna_Add6ResourcesCrate.label>
+  <Luna_Add6ResourcesCrate.description>可以儲存50組高級零件</Luna_Add6ResourcesCrate.description>
+
+  <Luna_Add7ResourcesCrate.label>緊湊資源箱（鈾）</Luna_Add7ResourcesCrate.label>
+  <Luna_Add7ResourcesCrate.description>可以儲存50組鈾</Luna_Add7ResourcesCrate.description>
+
+  <Luna_Add8ResourcesCrate.label>緊湊資源箱（黃金）</Luna_Add8ResourcesCrate.label>
+  <Luna_Add8ResourcesCrate.description>可以儲存50組黃金</Luna_Add8ResourcesCrate.description>
+
+  <Luna_Add9ResourcesCrate.label>緊湊資源箱（翡翠）</Luna_Add9ResourcesCrate.label>
+  <Luna_Add9ResourcesCrate.description>可以儲存50組翡翠</Luna_Add9ResourcesCrate.description>
+
+  <Luna_Add10ResourcesCrate.label>緊湊資源箱（玻璃鋼）</Luna_Add10ResourcesCrate.label>
+  <Luna_Add10ResourcesCrate.description>可以儲存50組玻璃鋼</Luna_Add10ResourcesCrate.description>
+
+  <Luna_Add11ResourcesCrate.label>緊湊資源箱（白銀）</Luna_Add11ResourcesCrate.label>
+  <Luna_Add11ResourcesCrate.description>可以儲存50組白銀</Luna_Add11ResourcesCrate.description>
+
+  <Luna_Add12ResourcesCrate.label>緊湊資源箱（活鐵）</Luna_Add12ResourcesCrate.label>
+  <Luna_Add12ResourcesCrate.description>可以儲存50組活鐵</Luna_Add12ResourcesCrate.description>
+  
+  <LunaAdd_Metal_Shelf_A.label>金屬儲存架A（空）</LunaAdd_Metal_Shelf_A.label>
+  <LunaAdd_Metal_Shelf_A.description>空的金屬儲存架。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：50組\n【可儲存類型】：所有物品</LunaAdd_Metal_Shelf_A.description>
+
+  <LunaAdd_Metal_Shelf_B.label>金屬儲存架B（空）</LunaAdd_Metal_Shelf_B.label>
+  <LunaAdd_Metal_Shelf_B.description>空的金屬儲存架。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：50組\n【可儲存類型】：所有物品</LunaAdd_Metal_Shelf_B.description>
+  
+  <LunaAdd_Metal_Shelf_A_Full.label>金屬儲存架A（滿）</LunaAdd_Metal_Shelf_A_Full.label>
+  <LunaAdd_Metal_Shelf_A_Full.description>裝滿了的金屬貨架。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：50組\n【可儲存類型】：所有物品</LunaAdd_Metal_Shelf_A_Full.description>
+
+  <LunaAdd_Metal_Shelf_B_Full.label>金屬儲存架B（滿）</LunaAdd_Metal_Shelf_B_Full.label>
+  <LunaAdd_Metal_Shelf_B_Full.description>裝滿了的金屬貨架。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：50組\n【可儲存類型】：所有物品</LunaAdd_Metal_Shelf_B_Full.description>
+
+  <LunaAdd_Shelf_A_Empty.label>架子A（空）</LunaAdd_Shelf_A_Empty.label>
+  <LunaAdd_Shelf_A_Empty.description>一個空架子。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：38組\n【可儲存類型】：所有物品</LunaAdd_Shelf_A_Empty.description>
+  
+  <LunaAdd_Shelf_A_Full.label>架子A（滿）</LunaAdd_Shelf_A_Full.label>
+  <LunaAdd_Shelf_A_Full.description>一個裝滿了的架子。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：38組\n【可儲存類型】：所有物品</LunaAdd_Shelf_A_Full.description>
+  
+  <LunaAddShippingContainerBlue.label>藍色壓縮集裝箱</LunaAddShippingContainerBlue.label>
+  <LunaAddShippingContainerBlue.description>通過對空間與物體的壓縮，這個集裝箱能夠儲存難以置信的大量物品。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：1200組\n【可儲存類型】：所有物品</LunaAddShippingContainerBlue.description>
+  
+  <LunaAddShippingContainerGreen.label>綠色壓縮集裝箱</LunaAddShippingContainerGreen.label>
+  <LunaAddShippingContainerGreen.description>通過對空間與物體的壓縮，這個集裝箱能夠儲存難以置信的大量物品。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：1200組\n【可儲存類型】：所有物品</LunaAddShippingContainerGreen.description>
+  
+  <LunaAddShippingContainerRed.label>紅色壓縮集裝箱</LunaAddShippingContainerRed.label>
+  <LunaAddShippingContainerRed.description>通過對空間與物體的壓縮，這個集裝箱能夠儲存難以置信的大量物品。\n\n&lt;color=#E5E54C&gt;儲存能力：&lt;/color&gt;\n\n【最大儲存量】：1200組\n【可儲存類型】：所有物品</LunaAddShippingContainerRed.description>
+
+</LanguageData>

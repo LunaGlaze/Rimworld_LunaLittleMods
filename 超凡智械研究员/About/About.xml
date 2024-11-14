@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>超凡机械研究员</name>
+    <author>幽月琉璃Luna</author>
+    <url></url>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <packageId>lunaglaze.Scenarios.biowano</packageId>
+    <description>添加了一个1.4生物科技DLC单人机械师与1.5异象DLC食尸鬼研究船开局的拼接版开局剧本。
+	介绍文本：超凡智能与黑暗超凡智能，多么令人着迷的伟大的存在，人类不可理解的、不可名状的智慧……
+身为一名后勤机械师，你掌握的机械体在令人生畏的同时对于超凡智能的着迷也更进一步使得你被周围一切自诩“正常”的庸俗之人排斥。
+但，你无所谓。你本就不需要在意他们的看法——在你发现了那个神秘而诡异的信号之后，你便带着你的金属随从与从同样研究超凡智能但却始终不愿意对你透露更多的研究员那里得来的食尸鬼仆从，偷了一艘飞船来到了这个人烟稀少的边缘世界。
+现在，是时候由你揭开这一切的答案了！
+	==剧本详情==
+玩家派系:科研探险队
+以1x机械师和1x食尸鬼开局。
+乘坐运输舱抵达。
+开局科技:微电子基础
+开局科技:基础机械科技
+开局科技:蓄电池
+开局科技:安全大门
+开局资源:
+机械体:搬运机
+机械体:建造机
+-白银x500
+-包装生存食品x50 
+-医药x10
+零部件x40
+钢铁x750
+-玻璃钢x80
+-次生核心(基础) x2
+扭曲肉x50
+活铁x50
+-暗黑超凡碎片
+-魔经
+-收容平台</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+	</loadAfter>
+</ModMetaData>

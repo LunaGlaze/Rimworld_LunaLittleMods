@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+		<defName>LunaAddSimplyCrateMetalShelf</defName>
+	</DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+		<defName>LunaAddSimplyCrateShippingContainer</defName>
+	</DesignatorDropdownGroupDef>
+
+<!-- 金属架 -->  
+  <ThingDef Name="LunaAddMetalShelf" ParentName="LWM_DeepStorage" Abstract="True">
+		<designatorDropdown>LunaAddSimplyCrateMetalShelf</designatorDropdown>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>2750</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>50</Mass>
+    </statBases>
+     <costList>
+      <Steel>175</Steel>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>25</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	 <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+  </ThingDef>
+	<!-- ==================== Metal Shelf A ==================== -->  
+  
+  <ThingDef ParentName="LunaAddMetalShelf" >
+    <defName>LunaAdd_Metal_Shelf_A</defName>
+    <label>Metal Shelf A (empty)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/MetalShelfA(Empty)/Metal_Shelf_A_Empty</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MetalShelfA(Empty)/Metal_Shelf_A_Empty_UI</uiIconPath>
+    <size>(2,1)</size>
+  </ThingDef> 
+ 
+	<!-- ==================== Metal Shelf B ==================== -->  
+  
+  <ThingDef ParentName="LunaAddMetalShelf" >
+    <defName>LunaAdd_Metal_Shelf_B</defName>
+    <label>Metal Shelf B (empty)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/MetalShelfB(Empty)/Metal_Shelf_B_Empty</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MetalShelfB(Empty)/Metal_Shelf_B_Empty_UI</uiIconPath>
+    <size>(2,1)</size>
+  </ThingDef> 
+
+ 	<!-- ==================== Metal Shelf A Full ==================== -->  
+  
+  <ThingDef ParentName="LunaAddMetalShelf" >
+    <defName>LunaAdd_Metal_Shelf_A_Full</defName>
+    <label>Metal Shelf A (Full)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/MetalShelfA(Full)/Metal_Shelf_A_Full</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/MetalShelfA(Full)/Metal_Shelf_A_Full_UI</uiIconPath>
+    <size>(2,1)</size>	
+  </ThingDef> 
+ 
+ 	<!-- ==================== Metal Shelf B Full ==================== -->  
+  
+  <ThingDef ParentName="LunaAddMetalShelf" >
+    <defName>LunaAdd_Metal_Shelf_B_Full</defName>
+    <label>Metal Shelf B (Full)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/MetalShelfB(Full)/Metal_Shelf_B_Full</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/MetalShelfB(Full)/Metal_Shelf_B_Full_UI</uiIconPath>
+    <size>(2,1)</size>
+  </ThingDef>   
+ 
+ 	<!-- ==================== Shelf A Empty ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>LunaAdd_Shelf_A_Empty</defName>
+    <label>Shelf A (Empty)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/ShelfA(Empty)/Shelf_A_Empty</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ShelfA(Empty)/Shelf_A_Empty_UI</uiIconPath>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>1250</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>135</costStuffCount>	
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>19</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	 <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>   
+ 
+ 	<!-- ==================== Shelf A Full ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>LunaAdd_Shelf_A_Full</defName>
+    <label>Shelf A (Full)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/ShelfA(full)/Shelf_A_full</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>		  
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ShelfA(full)/Shelf_A_full_UI</uiIconPath>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>1250</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>50</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>135</costStuffCount>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>19</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	 <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>    
+
+<!-- 集装箱 -->  
+  <ThingDef Name="LunaAddShippingContainer" ParentName="LWM_DeepStorage" Abstract="True">
+		<designatorDropdown>LunaAddSimplyCrateShippingContainer</designatorDropdown>
+    <description>By compressing space and objects, this shipping container is able to store incredibly large quantities of items!</description>
+    <size>(4,3)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>2200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>1000</Mass>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+     <costList>
+      <Steel>2000</Steel>
+	    <Plasteel>150</Plasteel>
+	    <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>20</minNumberStacks>
+        <maxNumberStacks>100</maxNumberStacks><!-- In-game 1200 -->
+        <timeStoringTakes>250</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	 <researchPrerequisites>
+      <li>LunaCSS_CompactShippingContainer</li>
+    </researchPrerequisites>
+  </ThingDef>
+ 
+	<!-- ==================== Shipping Container Red ==================== -->  
+  
+  <ThingDef ParentName="LunaAddShippingContainer" >
+    <defName>LunaAddShippingContainerRed</defName>
+    <label>Compressed ShippingContainer Red</label>
+    <graphicData>
+      <texPath>Things/ShippingContainerRed/Shipping_Container_Red</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerRed/Shipping_Container_Red_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+  </ThingDef>  
+
+	<!-- ==================== Shipping Container Blue ==================== -->  
+  
+  <ThingDef ParentName="LunaAddShippingContainer">
+    <defName>LunaAddShippingContainerBlue</defName>
+    <label>Compressed ShippingContainer Blue</label>
+    <graphicData>
+      <texPath>Things/ShippingContainerBlue/Shipping_Container_Blue</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerBlue/Shipping_Container_Blue_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+  </ThingDef>  
+
+	<!-- ==================== Shipping Container Green ==================== -->  
+  
+  <ThingDef ParentName="LunaAddShippingContainer" >
+    <defName>LunaAddShippingContainerGreen</defName>
+    <label>Compressed ShippingContainer Green</label>
+    <graphicData>
+      <texPath>Things/ShippingContainerGreen/Shipping_Container_Green</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerGreen/Shipping_Container_Green_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+  </ThingDef>  
+
+</Defs>

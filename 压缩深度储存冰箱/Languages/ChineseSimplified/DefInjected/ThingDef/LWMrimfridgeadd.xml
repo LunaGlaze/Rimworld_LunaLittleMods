@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Luna_LWMRF_D_Refrigerator.label>压缩深度储存冰箱</Luna_LWMRF_D_Refrigerator.label>
+  <Luna_LWMRF_D_Refrigerator.description>运用了压缩空间功能的深度储存冰柜，能够储存大量物品，而且可以保鲜食物，隔热性能良好。</Luna_LWMRF_D_Refrigerator.description>
+  
+  <Luna_LWMRF_S_Refrigerator.label>小型压缩深度储存冰箱</Luna_LWMRF_S_Refrigerator.label>
+  <Luna_LWMRF_S_Refrigerator.description>运用了压缩空间功能的深度储存冰柜，能够储存大量物品，而且可以保鲜食物，隔热性能良好。</Luna_LWMRF_S_Refrigerator.description>
+  
+  <Luna_LWMRF_Q_Refrigerator.label>大型压缩深度储存冰箱</Luna_LWMRF_Q_Refrigerator.label>
+  <Luna_LWMRF_Q_Refrigerator.description>运用了压缩空间功能的深度储存冰柜，能够储存大量物品，而且可以保鲜食物，隔热性能良好。</Luna_LWMRF_Q_Refrigerator.description>
+
+</LanguageData>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DesignatorDropdownGroupDef>
+		<defName>LunaAddLWMRFridgeDesignatorDropdownDef</defName>
+	</DesignatorDropdownGroupDef>
+	<!--1*2-->
+	<ThingDef ParentName="FridgeBase">
+		<defName>Luna_LWMRF_D_Refrigerator</defName>
+		<label>Compressed Refrigerator</label>
+		<description>Deep refrigerator that utilize the compressed space feature are capable of storing large quantities and keeping food fresh and well insulated.</description>
+		<designatorDropdown>LunaAddLWMRFridgeDesignatorDropdownDef</designatorDropdown>
+		<graphicData>
+			<texPath>Building/Temperature/Fridge/DualFridge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>100</Mass>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>180</basePowerConsumption>
+				<powerUpgrades>
+					<li>
+						<researchProject>RimFridge_PowerFactorSetting</researchProject>
+						<factor>1.0</factor>
+					</li>
+				</powerUpgrades>
+			</li>
+          <li Class='LWM.DeepStorage.Properties'>
+            <minNumberStacks>2</minNumberStacks>
+            <maxNumberStacks>18</maxNumberStacks>
+            <maxMassOfStoredItem>100</maxMassOfStoredItem>
+            <minTimeStoringTakes>25</minTimeStoringTakes>
+            <additionalTimeEachStack>120</additionalTimeEachStack><!-- More things mean more time to lower them into position -->
+            <additionalTimeEachDef>30</additionalTimeEachDef><!-- Got to sort things! -->
+            <overlayType>SumOfAllItems</overlayType>
+          </li>
+			<li Class="RimFridge.CompProperties_SecondLayer">
+				<graphicData>
+					<texPath>Building/Temperature/Fridge/DualFridgeLid</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>Transparent</shaderType>
+					<drawSize>(4,3)</drawSize>
+				</graphicData>
+				<altitudeLayer>Projectile</altitudeLayer>
+			</li>
+		</comps>
+		<building>
+			<groupingLabel>Luna Refrigerator Dual</groupingLabel>
+		</building>
+		<researchPrerequisites>
+			<li>Luna_LWMrimfridgeadd</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!--1*1-->
+	<ThingDef ParentName="FridgeBase">
+		<defName>Luna_LWMRF_S_Refrigerator</defName>
+		<label>Single Compressed Refrigerator</label>
+		<description>Deep refrigerator that utilize the compressed space feature are capable of storing large quantities and keeping food fresh and well insulated.</description>
+		<designatorDropdown>LunaAddLWMRFridgeDesignatorDropdownDef</designatorDropdown>
+		<graphicData>
+			<texPath>Building/Temperature/Fridge/SingleFridge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>100</Mass>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>1250</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>90</basePowerConsumption>
+			</li>
+          <li Class='LWM.DeepStorage.Properties'>
+            <minNumberStacks>2</minNumberStacks>
+            <maxNumberStacks>18</maxNumberStacks>
+            <maxMassOfStoredItem>100</maxMassOfStoredItem>
+            <minTimeStoringTakes>25</minTimeStoringTakes>
+            <additionalTimeEachStack>120</additionalTimeEachStack><!-- More things mean more time to lower them into position -->
+            <additionalTimeEachDef>30</additionalTimeEachDef><!-- Got to sort things! -->
+            <overlayType>SumOfAllItems</overlayType>
+          </li>
+			<li Class="RimFridge.CompProperties_SecondLayer">
+				<graphicData>
+					<texPath>Building/Temperature/Fridge/SingleFridgeLid</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>Transparent</shaderType>
+					<drawSize>(3,3)</drawSize>
+				</graphicData>
+				<altitudeLayer>Projectile</altitudeLayer>
+			</li>
+		</comps>
+		<building>
+			<groupingLabel>Luna Refrigerator Single</groupingLabel>
+		</building>
+		<researchPrerequisites>
+			<li>Luna_LWMrimfridgeadd</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!--2*2-->
+	<ThingDef ParentName="FridgeBase">
+		<defName>Luna_LWMRF_Q_Refrigerator</defName>
+		<label>Quad Compressed Refrigerator</label>
+		<description>Deep refrigerator that utilize the compressed space feature are capable of storing large quantities and keeping food fresh and well insulated.</description>
+		<designatorDropdown>LunaAddLWMRFridgeDesignatorDropdownDef</designatorDropdown>
+		<graphicData>
+			<texPath>Building/Temperature/Fridge/QuadFridge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>400</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>100</Mass>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>360</basePowerConsumption>
+				<powerUpgrades>
+					<li>
+						<researchProject>RimFridge_PowerFactorSetting</researchProject>
+						<factor>1.0</factor>
+					</li>
+				</powerUpgrades>
+			</li>
+          <li Class='LWM.DeepStorage.Properties'>
+            <minNumberStacks>2</minNumberStacks>
+            <maxNumberStacks>18</maxNumberStacks>
+            <maxMassOfStoredItem>100</maxMassOfStoredItem>
+            <minTimeStoringTakes>25</minTimeStoringTakes>
+            <additionalTimeEachStack>120</additionalTimeEachStack><!-- More things mean more time to lower them into position -->
+            <additionalTimeEachDef>30</additionalTimeEachDef><!-- Got to sort things! -->
+            <overlayType>SumOfAllItems</overlayType>
+          </li>
+			<li Class="RimFridge.CompProperties_SecondLayer">
+				<graphicData>
+					<texPath>Building/Temperature/Fridge/QuadFridgeLid</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>Transparent</shaderType>
+					<drawSize>(4,4)</drawSize>
+				</graphicData>
+				<altitudeLayer>Projectile</altitudeLayer>
+			</li>
+		</comps>
+		<building>
+			<groupingLabel>Luna Refrigerator Quad</groupingLabel>
+		</building>
+		<researchPrerequisites>
+			<li>Luna_LWMrimfridgeadd</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

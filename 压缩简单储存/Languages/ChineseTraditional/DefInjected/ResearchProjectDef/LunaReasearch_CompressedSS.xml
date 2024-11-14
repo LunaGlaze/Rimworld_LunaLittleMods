@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <LunaCSS_CompactResourcesCrate.label>緊湊資源箱</LunaCSS_CompactResourcesCrate.label>
+  <LunaCSS_CompactResourcesCrate.description>用更緊湊的空間和壓縮的方式儲存大量單一種類資源</LunaCSS_CompactResourcesCrate.description>
+
+  <LunaCSS_CompactShippingContainer.label>壓縮深度資源箱</LunaCSS_CompactShippingContainer.label>
+  <LunaCSS_CompactShippingContainer.description>通過對空間與物體的壓縮的技術運用，儲存難以置信的大量物品</LunaCSS_CompactShippingContainer.description>
+
+</LanguageData>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--1x1基因处理器plus-->
+  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Luna_AdvancedGeneProcessor</defName>
+    <label>Advanced gene processor</label>
+    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.</description>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>14</pathCost>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Misc/GeneProcessor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+      <shadowData>
+        <volume>(1.5, 0.4, 1.5)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(1, 1)</size>
+    <canOverlapZones>false</canOverlapZones>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2100</uiOrder>
+    <researchPrerequisites>
+      <li>GeneProcessor</li>
+      <li>UltraMechtech</li>
+    </researchPrerequisites>
+    <descriptionHyperlinks>
+      <ThingDef>GeneAssembler</ThingDef>
+      <ThingDef>GeneBank</ThingDef>
+      <ThingDef>Genepack</ThingDef>
+      <ThingDef>Xenogerm</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>9000</WorkToBuild>
+      <Mass>85</Mass>
+      <Flammability>0.5</Flammability>
+      <GeneticComplexityIncrease>3</GeneticComplexityIncrease>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <PowerfocusChip>1</PowerfocusChip>
+    </costList>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <building>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringGeneProcessor</compClass>
+        <inspectString>Gene complexity increase</inspectString>
+      </li>
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>100</maxSimultaneous>
+        <maxDistance>12.9</maxDistance>
+        <showMaxSimultaneous>false</showMaxSimultaneous>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

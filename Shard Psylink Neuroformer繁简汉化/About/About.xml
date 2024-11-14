@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>ShardPsylinkNeuroformer繁简汉化：碎片启灵装置</name>
+	<author>幽月琉璃Luna</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>LunaGlaze.ShardPsylinkNeuroformer.blackkanye.zh</packageId>
+	<description>
+	 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3276417853] Shard Psylink Neuroformer [/url]模组简体中文+繁體中文汉化。
+	 
+	 [h1]模組簡介：[/h1]
+	 
+	 仿照异象DLC使用暗黑超凡碎片制作心灵神器的功能，为游戏添加了可购买或使用暗黑超凡碎片制作的新式启灵装置。
+	</description>
+	 <modDependencies>
+		<li>
+		  <packageId>Ludeon.RimWorld.Royalty</packageId>
+		  <displayName>Royalty</displayName>
+		</li>
+		<li>
+		  <packageId>Ludeon.RimWorld.Anomaly</packageId>
+		  <displayName>Anomaly</displayName>
+		</li>
+		<li>
+		  <packageId>blackkanye.ShardPsylinkNeuroformer</packageId>
+		  <displayName>Shard Psylink Neuroformer</displayName>
+			<steamWorkshopUrl>steam://https://store.steampowered.com/app/2380740/RimWorld__Anomaly/</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>blackkanye.ShardPsylinkNeuroformer</li>
+	</loadAfter>
+</ModMetaData>

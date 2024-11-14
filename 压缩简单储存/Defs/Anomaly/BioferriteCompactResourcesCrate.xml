@@ -1,0 +1,46 @@
+<Defs>
+   	<!-- ==================== ResourcesCrate12 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add12ResourcesCrate</defName>
+    <label>Bioferrite CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Bioferrite</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate12</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate12</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Bioferrite>15</Bioferrite>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Bioferrite</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Bioferrite</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+
+</Defs>

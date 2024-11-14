@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <ModMetaData>
+	<name>Luna的压缩简单储存</name>
+	<author>幽月琉璃Luna</author>
+	<supportedVersions>
+    	<li>1.5</li> 
+	</supportedVersions>
+	<packageId>LunaGlaze.SimpleStorage.Compressed</packageId>
+	<description>将因某些睿智玩家的攻击导致的5-4-24 mod update前的旧版本[JDS] Simple Storage中的一些储存装置强化后带到了新版本。原始资源绝大部分来自1.4版本11-6-23备份的[JDS] Simple Storage模组存档。
+A large number of values in [JDS] Simple Storage were nerfed as a result of an attack by certain players, and a rework was ushered in for version 1.5. This mod takes some of the storage units from older versions of Simple Storage and brings them back to the new version with tweaks. The majority of the original resources came from the [JDS] Simple Storage mod backup from version 1.4, 11-6-23.
+[h1]当前内容[/h1][list]
+[*] 12款单种物资储存箱（占地1，存量50，需要简单研究解锁；比Simple Storage新增了白银与灵铁）
+[*] 多款储物能力相比原版及模组前置仍较高的置物架，需要机械加工研究解锁
+[*] 原1.4旧版Simple Storage的1200容量集装箱，额外添加了前置研究[/list]
+[h1]联动项目[/h1][list]
+[*] 当同时加载了我的另一个mod[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3270161119] Luna的压缩深度储存冰箱/Luna's Compressed Refrigerator [/url]后，使得Simple Storage新版的冷冻集装箱真的变为冰箱，并添加前置科技[/list]</description>
+	<modDependencies>
+	  <li>
+	    <displayName>LWM's Deep Storage</displayName>
+		<packageId>LWM.DeepStorage</packageId>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/1617282896</steamWorkshopUrl>
+	  </li>
+	  <li>
+	    <displayName>[JDS] Simple Storage</displayName>
+		<packageId>JangoDsoul.SimpleStorage</packageId>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/1961098970</steamWorkshopUrl>
+	  </li>
+	</modDependencies>
+	<loadAfter>
+	  <li>LWM.DeepStorage</li>
+	  <li>rimfridge.kv.rw</li>
+	  <li>JangoDsoul.SimpleStorage</li>
+	  <li>lunaglaze.rimfridge.lwmds.add</li>
+	</loadAfter>
+  </ModMetaData>

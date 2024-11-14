@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- 塔林家具-->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Daily furniture 塔林家具</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="ADH_bed_double_B_A_FURNITURE"]/comps/li[@Class = "CompProperties_AffectedByFacilities" or 
+					defName="ADH_bed_double_A_A_FURNITURE" or 
+					defName="ADH_bed_Single_B_A_FURNITURE" or 
+					defName="ADH_bed_Single_A_A_FURNITURE"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+			<value>
+				<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+				<li MayRequire="VanillaExpanded.VFECore">Table_RoyalEndTable</li>
+				<li MayRequire="VanillaExpanded.VFECore">Table_Wardrobe</li>
+				<li MayRequire="VanillaExpanded.VFECore">Table_LightEndTable</li>
+				<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedEndTable</li>
+				<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+			</value>
+		</match>
+	</Operation>
+
+  <!-- 原版家具拓展-->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="Bed_StoneSlab" or defName="Bed_Simple" or defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_clock_A_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_A_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_B_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_E_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_B_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_C_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_D_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_A_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_B_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_C_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_D_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_E_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_F_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_G_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_H_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
+				</value>
+		</match>
+	</Operation>
+
+  <!-- 原版家具拓展：太空-->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Spacer Module</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="Bed_AdvBed" or defName="Bed_AdvDoubleBed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_clock_A_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_book_A_B_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_A_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_B_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_light_E_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_B_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_C_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_cabinet_A_D_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_A_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_B_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_C_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_D_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_E_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_F_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_G_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_H_A_FURNITURE</li>
+					<li MayRequire="ZeroWhite.Dailyfurniture">ADH_rug_I_A_FURNITURE</li>
+				</value>
+		</match>
+	</Operation>
+
+  <!-- 皇权头衔需求-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][disablingPrecepts/li="SlabBed_Preferred"]/things</xpath>
+          <value>
+            <li MayRequire="ZeroWhite.Dailyfurniture">ADH_bed_double_B_A_FURNITURE</li>
+          </value>
+        </li>
+		<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Daily furniture 塔林家具</li>
+			</mods>
+			<match Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName="ADH_bed_double_B_A_FURNITURE"]/costList</xpath>
+				<value>
+					<costList>
+						<Gold>5</Gold>
+					</costList>
+				</value>
+			</match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

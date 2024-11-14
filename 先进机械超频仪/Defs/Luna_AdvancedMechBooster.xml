@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--1x1机械超频仪plus-->
+  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Luna_AdvancedMechBooster</defName>
+    <label>advanced mech booster</label>
+    <description>A remote energy and computation enhancement device. Any friendly mechanoids in its effect radius will move and work faster.</description>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.4</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Power/MechBooster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.8, 0.35, 0.8)</volume>
+        <offset>(0, 0, -0.2)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2420</uiOrder>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <PowerfocusChip>1</PowerfocusChip>
+    </costList>
+    <researchPrerequisites>
+      <li>UltraMechtech</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_CauseHediff_AoE">
+        <range>12.5</range>
+        <onlyTargetMechs>true</onlyTargetMechs>
+        <hediff>MechBoost</hediff>
+        <activeSound>MechBooster_Working</activeSound>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowCauseHediffAoE</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+</Defs>

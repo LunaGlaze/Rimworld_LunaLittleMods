@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+  	<defName>LunaAddSimplyResourcesCrate</defName>
+  	<label>Simply Resources Crate</label>
+  </DesignatorDropdownGroupDef>
+  
+  <!-- ==================== ResourcesCrate Base ==================== -->
+
+  <ThingDef Name="LunaAddResourcesCrateBase" ParentName="LWM_DeepStorage" Abstract="True">
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <statBases>
+      <Beauty>0.7</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+      </defaultStorageSettings>
+    </building>	
+		<researchPrerequisites>
+			<li>LunaCSS_CompactResourcesCrate</li>
+		</researchPrerequisites>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>50</maxNumberStacks> <!-- In-game 50 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+ 	<!-- ==================== ResourcesCrate1 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add1ResourcesCrate</defName>
+    <label>WoodLog CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of WoodLog</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate1</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate1</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>90</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>WoodLog</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>WoodLog</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>		
+  </ThingDef>
+ 
+  	<!-- ==================== ResourcesCrate2 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add2ResourcesCrate</defName>
+    <label>Steel CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Steel</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate2</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Steel>15</Steel>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+  
+  	<!-- ==================== ResourcesCrate3 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add3ResourcesCrate</defName>
+    <label>Textiles CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Textiles</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate3</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Cloth>15</Cloth>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <categories>
+          <li>Textiles</li>
+        </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <categories>
+          <li>Textiles</li>
+        </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef> 
+ 
+  	<!-- ==================== ResourcesCrate4 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add4ResourcesCrate</defName>
+    <label>Leather CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Leather</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate4</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Leather_Plain>15</Leather_Plain>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <categories>
+          <li>Leathers</li>
+        </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <categories>
+          <li>Leathers</li>
+        </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>  
+ 
+  	<!-- ==================== ResourcesCrate5 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add5ResourcesCrate</defName>
+    <label>Component CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Component</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate5</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate5</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <ComponentIndustrial>15</ComponentIndustrial>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>ComponentIndustrial</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>ComponentIndustrial</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>   
+ 
+  	<!-- ==================== ResourcesCrate6 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add6ResourcesCrate</defName>
+    <label>AdvancedComponent CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Advanced Component</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate6</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate6</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <ComponentSpacer>15</ComponentSpacer>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>ComponentSpacer</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>ComponentSpacer</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>    
+ 
+  	<!-- ==================== ResourcesCrate7 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add7ResourcesCrate</defName>
+    <label>Uranium CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Uranium</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate7</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate7</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Uranium>15</Uranium>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Uranium</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Uranium</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>    
+ 
+   	<!-- ==================== ResourcesCrate8 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add8ResourcesCrate</defName>
+    <label>Gold CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Gold</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate8</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate8</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Gold>150</Gold>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Gold</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Gold</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>   
+ 
+   	<!-- ==================== ResourcesCrate9 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add9ResourcesCrate</defName>
+    <label>Jade CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Jade</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate9</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate9</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Jade>15</Jade>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Jade</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Jade</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>    
+ 
+   	<!-- ==================== ResourcesCrate10 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add10ResourcesCrate</defName>
+    <label>Plasteel CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Plasteel</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate10</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate10</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Plasteel</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Plasteel</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+ 
+   	<!-- ==================== ResourcesCrate11 ==================== -->
+
+  <ThingDef ParentName="LunaAddResourcesCrateBase" >
+    <defName>Luna_Add11ResourcesCrate</defName>
+    <label>Silver CompactResourcesCrate</label>
+    <description>Can Storage up to 50 Stack of Silver</description>
+		<designatorDropdown>LunaAddSimplyResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate11</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate11</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Silver>150</Silver>
+      <WoodLog>75</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Silver</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Silver</li>
+        </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+ 
+</Defs>

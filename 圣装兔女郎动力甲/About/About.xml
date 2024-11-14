@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Hoomancute Prestige 圣装兔女郎动力甲</name>
+    <author>幽月琉璃Luna</author>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <packageId>lunaglaze.Hoomancute.Prestige</packageId>
+    <description>Added Prestige PowerBunny armor to Hooman cute for Royalty.
+	为Hooman cute添加了圣装兔女郎动力甲以满足贵族头衔需求。材质个人依照Hooman cute原版修改；属性与圣装海军甲相同（原兔女郎动力甲与普通海军甲相同），覆盖层与原兔女郎动力甲相同。没有CE兼容补丁。</description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>RimWorld - Royalty</displayName>
+			<steamWorkshopUrl>steam://https://store.steampowered.com/app/1149640/RimWorld__Royalty/</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Barbariank.Hoomancute</packageId>
+			<displayName>Hooman cute</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3271245723/</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Barbariank.Hoomancute</li>
+	</loadAfter>
+</ModMetaData>

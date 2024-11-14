@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>LunaGlaze_ModResearch</defName>
+	<label>LunaGlaze</label>
+  </ResearchTabDef>
+  
+<!-- 研究 -->
+  <ResearchProjectDef>
+    <defName>Luna_LWMrimfridgeadd</defName>
+    <label>Compressed Refrigerator</label>
+    <description>A technique for deep storage of refrigerated items using compression technology.</description>
+	<prerequisites>
+      <li>AirConditioning</li>
+    </prerequisites>
+	<tab>LunaGlaze_ModResearch</tab>
+    <techLevel>Industrial</techLevel>
+    <baseCost>250</baseCost>
+    <researchViewX>0.25</researchViewX> 
+    <researchViewY>0.25</researchViewY>
+  </ResearchProjectDef>
+  
+</Defs>

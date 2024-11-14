@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Daily VFE Patches/Luna的塔林原拓家具补丁</name>
+    <author>幽月琉璃Luna</author>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <packageId>lunaglaze.patches.Dailyfurniture.VFE</packageId>
+    <description>为塔林家具与原版家具拓展（基础、太空）添加了卧室家具链接兼容性与皇权兼容性
+	[*] Mutual links for bedroom furniture (mainly beds) from Daily furniture and Vanilla Furniture Expanded. (Includes Core and Spacer Modules.)
+	[*] Added Royalty DLC compatibility for Daily furniture. (Deluxe double beds are available for nobles, but require gold for crafting with Royalty.)</description>
+	<modDependencies>
+		<li>
+			<packageId>ZeroWhite.Dailyfurniture</packageId>
+			<displayName>Daily furniture 塔林家具</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3024562670</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>VanillaExpanded.VFECore</packageId>
+			<displayName>Vanilla Furniture Expanded</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/1718190143</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>ZeroWhite.Dailyfurniture</li>
+		<li>VanillaExpanded.VFECore</li>
+		<li>VanillaExpanded.VFESpacer</li>
+	</loadAfter>
+</ModMetaData>

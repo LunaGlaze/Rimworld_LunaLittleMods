@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>  
+    
+  <LTS_PsytrainerGrimoire_PsychicSlaughter.label>靈能魔典（心靈宰殺）</LTS_PsytrainerGrimoire_PsychicSlaughter.label>  
+  <LTS_PsytrainerGrimoire_PsychicSlaughter.description>一種能對大腦部分進行精神改造的裝置，其將賦予使用者可怖的心靈能力。使用後，該裝置會化作一灘詭異的血水。</LTS_PsytrainerGrimoire_PsychicSlaughter.description>  
+  <LTS_PsytrainerGrimoire_PsychicSlaughter.comps.CompUsable.useLabel>閱讀{0_label}</LTS_PsytrainerGrimoire_PsychicSlaughter.comps.CompUsable.useLabel>  
+  <LTS_PsytrainerGrimoire_PsychicSlaughter.comps.CompUsable.useMessage>{PAWN_nameDef}使用了靈能魔典，而後他們手中的邪異書籍便融化為了腥臭的血水。</LTS_PsytrainerGrimoire_PsychicSlaughter.comps.CompUsable.useMessage>  
+    
+  <LTS_PsytrainerGrimoire_ReleaseDeadlifeDust.label>靈能魔典（釋放活屍粉塵）</LTS_PsytrainerGrimoire_ReleaseDeadlifeDust.label>  
+  <LTS_PsytrainerGrimoire_ReleaseDeadlifeDust.description>一種能對大腦部分進行精神改造的裝置，其將賦予使用者可怖的心靈能力。使用後，該裝置會化作一灘詭異的血水。</LTS_PsytrainerGrimoire_ReleaseDeadlifeDust.description>  
+  <LTS_PsytrainerGrimoire_ReleaseDeadlifeDust.comps.CompUsable.useLabel>閱讀{0_label}</LTS_PsytrainerGrimoire_ReleaseDeadlifeDust.comps.CompUsable.useLabel>  
+  <LTS_PsytrainerGrimoire_ReleaseDeadlifeDust.comps.CompUsable.useMessage>{PAWN_nameDef}使用了靈能魔典，而後他們手中的邪異書籍便融化為了腥臭的血水。</LTS_PsytrainerGrimoire_ReleaseDeadlifeDust.comps.CompUsable.useMessage>  
+
+  <LTS_PsytrainerGrimoire_ShapeFlesh.label>靈能魔典（塑造血肉）</LTS_PsytrainerGrimoire_ShapeFlesh.label>  
+  <LTS_PsytrainerGrimoire_ShapeFlesh.description>一種能對大腦部分進行精神改造的裝置，其將賦予使用者可怖的心靈能力。使用後，該裝置會化作一灘詭異的血水。</LTS_PsytrainerGrimoire_ShapeFlesh.description>  
+  <LTS_PsytrainerGrimoire_ShapeFlesh.comps.CompUsable.useLabel>閱讀{0_label}</LTS_PsytrainerGrimoire_ShapeFlesh.comps.CompUsable.useLabel>  
+
+  <LTS_PsytrainerGrimoire_ShapeFlesh.comps.CompUsable.useMessage>{PAWN_nameDef}使用了靈能魔典，而後他們手中的邪異書籍便融化為了腥臭的血水。</LTS_PsytrainerGrimoire_ShapeFlesh.comps.CompUsable.useMessage>  
+  <LTS_PsytrainerGrimoire_TransmuteSteel.label>靈能魔典（轉化鋼鐵）</LTS_PsytrainerGrimoire_TransmuteSteel.label>  
+  <LTS_PsytrainerGrimoire_TransmuteSteel.description>一種能對大腦部分進行精神改造的裝置，其將賦予使用者可怖的心靈能力。使用後，該裝置會化作一灘詭異的血水。</LTS_PsytrainerGrimoire_TransmuteSteel.description>   
+  <LTS_PsytrainerGrimoire_TransmuteSteel.comps.CompUsable.useLabel>閱讀{0_label}</LTS_PsytrainerGrimoire_TransmuteSteel.comps.CompUsable.useLabel>  
+  <LTS_PsytrainerGrimoire_TransmuteSteel.comps.CompUsable.useMessage>{PAWN_nameDef}使用了靈能魔典，而後他們手中的邪異書籍便融化為了腥臭的血水。</LTS_PsytrainerGrimoire_TransmuteSteel.comps.CompUsable.useMessage>
+
+  <LTS_PsytrainerGrimoire_UnnaturalHealing.label>靈能魔典（異常醫術）</LTS_PsytrainerGrimoire_UnnaturalHealing.label>   
+  <LTS_PsytrainerGrimoire_UnnaturalHealing.description>一種能對大腦部分進行精神改造的裝置，其將賦予使用者可怖的心靈能力。使用後，該裝置會化作一灘詭異的血水。</LTS_PsytrainerGrimoire_UnnaturalHealing.description>  
+  <LTS_PsytrainerGrimoire_UnnaturalHealing.comps.CompUsable.useLabel>閱讀{0_label}</LTS_PsytrainerGrimoire_UnnaturalHealing.comps.CompUsable.useLabel>  
+  <LTS_PsytrainerGrimoire_UnnaturalHealing.comps.CompUsable.useMessage>{PAWN_nameDef}使用了靈能魔典，而後他們手中的邪異書籍便融化為了腥臭的血水。</LTS_PsytrainerGrimoire_UnnaturalHealing.comps.CompUsable.useMessage>
+  
+</LanguageData>

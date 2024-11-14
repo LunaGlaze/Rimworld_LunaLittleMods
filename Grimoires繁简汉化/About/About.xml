@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Grimoires繁簡漢化</name>
+	<author>幽月琉璃Luna</author>
+	<supportedVersions>
+		<li>1.5</li>
+    </supportedVersions>
+	<packageId>LunaGlaze.Grimoires.LTSPG.zh</packageId>
+  <description>
+	 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3275474564] Grimoires [/url]模组简体中文+繁體中文汉化。
+	 
+	 [h1]模組簡介：[/h1]
+	 為異象DLC添加了一種魔法書形式的心靈訓練器（靈能魔典），可以用於學習異常心靈能力（即事件刷新的具有特殊能力的加入者們具有的能力，如鋼鐵轉化、異常醫術等）
+	 
+	 PS：因为近期工坊首页的汉化mod技能译名不使用泰南采用的汉化组翻译而是看着很像机翻从官方翻译里找不到的名字，且其将魔法书称为“灵书”令我非常难受，故作此版本汉化
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Anomaly</packageId>
+			<displayName>RimWorld - Anomaly</displayName>
+			<steamWorkshopUrl>steam://https://store.steampowered.com/app/2380740/RimWorld__Anomaly/</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>LTS.PG</packageId>
+			<displayName>Grimoires</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3275474564</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+	  <li>Ludeon.RimWorld.Anomaly</li>
+	  <li>LTS.PG</li>
+	</loadAfter>
+</ModMetaData>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>LunaGlaze_ModResearch</defName>
+	<label>LunaGlaze</label>
+  </ResearchTabDef>
+  
+<!-- 研究 -->
+  <ResearchProjectDef>
+    <defName>LunaCSS_CompactResourcesCrate</defName>
+    <label>Compact ResourcesCrate</label>
+    <description>Storage of large amounts of a single type of resource in a more compact space and compressed means.</description>
+	<tab>LunaGlaze_ModResearch</tab>
+    <techLevel>Medieval</techLevel>
+    <baseCost>500</baseCost>
+    <researchViewX>1.25</researchViewX> 
+    <researchViewY>0.25</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>LunaCSS_CompactShippingContainer</defName>
+    <label>Compressed Shipping Container</label>
+    <description>Compression technology enables ShippingContainer to hold more items.</description>
+	  <tab>LunaGlaze_ModResearch</tab>
+	  <prerequisites>
+      <li>LunaCSS_CompactResourcesCrate</li>
+      <li>Fabrication</li>
+      <li>Machining</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+    <baseCost>2500</baseCost>
+    <researchViewX>2.25</researchViewX> 
+    <researchViewY>0.25</researchViewY>
+  </ResearchProjectDef>
+  
+</Defs>

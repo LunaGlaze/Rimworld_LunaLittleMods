@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ScenarioDef>
+    <defName>Luna_BiowanoScenario</defName>
+    <label>Archotech Mechanical Researcher</label>
+    <description>A mechanic studying dark extraordinary intelligence and a ghoul bodyguard.</description>
+	<scenario>
+		<name>超凡机械研究员</name>
+		<summary>一名研究黑暗超凡智能的机械师与一名食尸鬼保镖。</summary>
+		<description>超凡智能与黑暗超凡智能，多么令人着迷的伟大的存在，人类不可理解的、不可名状的智慧……
+身为一名后勤机械师，你掌握的机械体在令人生畏的同时对于超凡智能的着迷也更进一步使得你被周围一切自诩“正常”的庸俗之人排斥。
+但，你无所谓。你本就不需要在意他们的看法——在你发现了那个神秘而诡异的信号之后，你便带着你的金属随从与从同样研究超凡智能但却始终不愿意对你透露更多的研究员那里得来的食尸鬼仆从，偷了一艘飞船来到了这个人烟稀少的边缘世界。
+现在，是时候由你揭开这一切的答案了！
+</description>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>ResearchExpedition</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>超凡智能与黑暗超凡智能，多么令人着迷的伟大的存在，人类不可理解的、不可名状的智慧……
+身为一名后勤机械师，你掌握的机械体在令人生畏的同时对于超凡智能的着迷也更进一步使得你被周围一切自诩“正常”的庸俗之人排斥。
+但，你无所谓。你本就不需要在意他们的看法——在你发现了那个神秘而诡异的信号之后，你便带着你的金属随从与从同样研究超凡智能但却始终不愿意对你透露更多的研究员那里得来的食尸鬼仆从，偷了一艘飞船来到了这个人烟稀少的边缘世界。
+现在，是时候由你揭开这一切的答案了！</text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+				<def>ConfigurePawnsKindDefs</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<kindCounts>
+					<li>
+						<requiredAtStart>True</requiredAtStart>
+						<kindDef>Mechanitor</kindDef>
+					</li>
+					<li>
+						<requiredAtStart>True</requiredAtStart>
+						<kindDef>Ghoul</kindDef>
+					</li>
+				</kindCounts>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>DropPods</method>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>MicroelectronicsBasics</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>BasicMechtech</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Batteries</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>SecurityDoor</project>
+			</li>
+			<li Class="ScenPart_StartingMech">
+				<def>StartingMech</def>
+				<mechKind>Mech_Lifter</mechKind>
+				<overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+			</li>
+			<li Class="ScenPart_StartingMech">
+				<def>StartingMech</def>
+				<mechKind>Mech_Constructoid</mechKind>
+				<overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>500</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>10</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>40</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Steel</thingDef>
+				<count>750</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Plasteel</thingDef>
+				<count>80</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>SubcoreBasic</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Meat_Twisted</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Bioferrite</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Shard</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Tome</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>HoldingPlatform</thingDef>
+			</li>
+			<li Class="ScenPart_DisableMapGen">
+				<def>DisableExostriderRemains</def>
+			</li>
+			<li Class="ScenPart_MonolithGeneration">
+				<def>ScenPart_MonolithGeneration</def>
+				<method>NearColonists</method>
+			</li>
+		</parts>
+	</scenario>
+  </ScenarioDef>
+
+</Defs>

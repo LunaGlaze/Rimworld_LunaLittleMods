@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value><li>Luna_AdvancedGeneProcessor</li></value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GeneAssembler"]/descriptionHyperlinks</xpath>
+					<value><ThingDef>Luna_AdvancedGeneProcessor</ThingDef></value>
+				</li>
+				<li Class="PatchOperationFindMod">
+                    <mods><li>Save Our Ship 2</li></mods>
+		            <match Class="PatchOperationSequence">
+		            	<operations>
+			        	    <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/statBases/GeneticComplexityIncrease</xpath>
+                                <value><GeneticComplexityIncrease>6</GeneticComplexityIncrease></value>
+				            </li>
+			        	    <li Class="PatchOperationRemove">
+                                <xpath>/Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/costList/PowerfocusChip</xpath>
+				            </li>
+			        	    <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/costList</xpath>
+                                <value><ArchotechExoticParticles>1</ArchotechExoticParticles></value>
+				            </li>
+                        </operations>
+                    </match>
+                </li>
+			</operations>
+		</match>
+    </Operation>
+</Patch>

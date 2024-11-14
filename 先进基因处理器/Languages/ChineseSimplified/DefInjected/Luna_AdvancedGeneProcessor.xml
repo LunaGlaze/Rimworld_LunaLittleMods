@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Luna_AdvancedGeneProcessor.label>先进基因处理器</Luna_AdvancedGeneProcessor.label>
+  <Luna_AdvancedGeneProcessor.description>一台用于分析处理基因信息的设备。将其放置在基因装配器旁可以增加所能装配的异种胚芽基因复杂度的上限。建造多个基因处理器可进一步提高异种胚芽基因复杂度的上限。比起原有版本，其成本更高，但占地面积更小、提升更大。</Luna_AdvancedGeneProcessor.description>
+  <Luna_AdvancedGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>基因复杂度提升</Luna_AdvancedGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>
+
+
+</LanguageData>

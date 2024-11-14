@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>AdvancedGeneProcessor单格先进基因处理器</name>
+    <author>幽月琉璃Luna</author>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <packageId>lunaglaze.Biotech.AdvancedGeneProcessor</packageId>
+    <description>先进基因处理器mod，添加了一种占地仅单格、复杂度提升更大的高级机械超频仪，需要极致机械族科技解锁
+	[*]Added an advanced gene processor on a 1×1 cell.
+	[*]The advanced mech booster has genetic complexity increase of 3 (2 in the original) and needs to be unlocked by researching UltraMechtech.
+	[*]If you have Save Our Ship 2 installed, the machine will consume Exotic Particles to build, but the genetic complexity increase becomes 6.
+	在同时安装SOS2后将得到再一次强化。
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>RimWorld - Biotech</displayName>
+			<steamWorkshopUrl>steam://https://store.steampowered.com/app/1149640/RimWorld__Biotech/</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>kentington.saveourship2</li>
+	</loadAfter>
+</ModMetaData>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ShardPsychicAmplifier.label>碎片启灵装置</ShardPsychicAmplifier.label>
+  <ShardPsychicAmplifier.description>一种利用黑暗超凡智能造物模仿超凡智能制造的一次性装置，能够在使用者大脑中构造一条启灵神经，或者是升级现有的启灵神经。\n\n使用者将其压在眼睛上，它会接入并重组一部分脑组织。使用之后，这个装置会分解成一堆毫无用处的灰烬。</ShardPsychicAmplifier.description>
+  <ShardPsychicAmplifier.comps.0.useLabel>使用碎片启灵装置构造启灵神经</ShardPsychicAmplifier.comps.0.useLabel>
+
+
+</LanguageData>
