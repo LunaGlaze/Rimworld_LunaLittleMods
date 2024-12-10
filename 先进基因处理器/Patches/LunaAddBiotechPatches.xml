@@ -1,39 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+        <xpath>Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                 <value>
                     <li>Luna_AdvancedGeneProcessor</li>
                 </value>
-        </nomatch>
+        </match>
     </Operation>
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="GeneAssembler"]/descriptionHyperlinks</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="GeneAssembler"]/descriptionHyperlinks</xpath>
+        <xpath>Defs/ThingDef[defName="GeneAssembler"]/descriptionHyperlinks</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="GeneAssembler"]/descriptionHyperlinks</xpath>
                 <value>
                     <ThingDef>Luna_AdvancedGeneProcessor</ThingDef>
                 </value>
-        </nomatch>
+        </match>
     </Operation>
     <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Save Our Ship 2</li>
 		</mods>
-		<match Class="PatchOperationSequence">
-		 	<li Class="PatchOperationReplace">
-            	<xpath>/Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/statBases/GeneticComplexityIncrease</xpath>
-            	<value><GeneticComplexityIncrease>6</GeneticComplexityIncrease></value>
-		 	</li>
-		 	<li Class="PatchOperationRemove">
-            	<xpath>/Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/costList/PowerfocusChip</xpath>
-		 	</li>
-		 	<li Class="PatchOperationAdd">
-            	<xpath>/Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/costList</xpath>
-            	<value><ArchotechExoticParticles>1</ArchotechExoticParticles></value>
-		 	</li>
+		<match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/statBases/GeneticComplexityIncrease</xpath>
+            <value><GeneticComplexityIncrease>6</GeneticComplexityIncrease></value>
 		</match>
+		<nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/costList</xpath>
+            <value><PowerfocusChip>1</PowerfocusChip></value>
+		</nomatch>
     </Operation>
 </Patch>

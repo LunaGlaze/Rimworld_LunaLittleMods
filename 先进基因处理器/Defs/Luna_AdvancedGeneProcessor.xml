@@ -43,7 +43,7 @@
       <Steel>100</Steel>
       <Plasteel>25</Plasteel>
       <ComponentIndustrial>8</ComponentIndustrial>
-      <PowerfocusChip>1</PowerfocusChip>
+      <ArchotechExoticParticles MayRequire="kentington.saveourship2">1</ArchotechExoticParticles>
     </costList>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <building>
