@@ -2,7 +2,7 @@
 <loadFolders>
 	<v1.5>
 		<li>/</li>
-		<li IfModActive="Ludeon.RimWorld.Anomaly">Defs/Anomaly</li>
-		<!--li IfModActive="lunaglaze.rimfridge.lwmds.add">Patches</li-->
+		<li IfModActive="Ludeon.RimWorld.Anomaly">Anomaly</li>
+		<li IfModActive="jangodsoul.simplestorage">Simplestorage</li>
 	</v1.5>
 </loadFolders>

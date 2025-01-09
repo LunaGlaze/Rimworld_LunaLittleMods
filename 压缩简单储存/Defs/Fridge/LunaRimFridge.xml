@@ -2,6 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="LunaAddShippingContainer" Name="LunaFridgeAddShippingContainer" Abstract="True" MayRequire="lunaglaze.rimfridge.lwmds.add">
+       <tickerType>Rare</tickerType>
        <building>
         <preventDeteriorationInside>true</preventDeteriorationInside>
         <preventDeteriorationOnTop>true</preventDeteriorationOnTop>

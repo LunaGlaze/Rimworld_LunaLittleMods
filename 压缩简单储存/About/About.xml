@@ -20,11 +20,11 @@ A large number of values in [JDS] Simple Storage were nerfed as a result of an a
 		<packageId>LWM.DeepStorage</packageId>
 		<steamWorkshopUrl>steam://url/CommunityFilePage/1617282896</steamWorkshopUrl>
 	  </li>
-	  <li>
+	  <!--li>
 	    <displayName>[JDS] Simple Storage</displayName>
 		<packageId>JangoDsoul.SimpleStorage</packageId>
 		<steamWorkshopUrl>steam://url/CommunityFilePage/1961098970</steamWorkshopUrl>
-	  </li>
+	  </li-->
 	</modDependencies>
 	<loadAfter>
 	  <li>LWM.DeepStorage</li>

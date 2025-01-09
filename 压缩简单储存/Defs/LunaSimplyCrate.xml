@@ -17,7 +17,7 @@
       <Flammability>0.1</Flammability>
       <Mass>50</Mass>
     </statBases>
-     <costList>
+    <costList>
       <Steel>175</Steel>
     </costList>
     <building>
@@ -35,8 +35,9 @@
         <maxNumberStacks>25</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
-		<overlayType>None</overlayType>
+		    <overlayType>None</overlayType>
       </li>
+      <li Class="CompProperties_Forbiddable"/>
     </comps>
 	 <researchPrerequisites>
       <li>Machining</li>
@@ -222,8 +223,9 @@
         <maxNumberStacks>100</maxNumberStacks><!-- In-game 1200 -->
         <timeStoringTakes>250</timeStoringTakes>
         <showContents>false</showContents>
-		<overlayType>None</overlayType>
+		    <overlayType>None</overlayType>
       </li>
+      <li Class="CompProperties_Forbiddable"/>
     </comps>
 	 <researchPrerequisites>
       <li>LunaCSS_CompactShippingContainer</li>

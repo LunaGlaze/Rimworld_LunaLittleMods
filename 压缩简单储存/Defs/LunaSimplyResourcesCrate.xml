@@ -29,8 +29,9 @@
         <maxNumberStacks>50</maxNumberStacks> <!-- In-game 50 -->
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
-		<overlayType>None</overlayType>
+		    <overlayType>None</overlayType>
       </li>
+      <li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>
 
