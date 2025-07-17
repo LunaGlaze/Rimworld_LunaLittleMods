@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <!--1x1基因处理器plus-->
-  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
+  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech" Name="LunaGlaze_AdvancedGeneProcessor">
     <defName>Luna_AdvancedGeneProcessor</defName>
     <label>Advanced gene processor</label>
-    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.</description>
+    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.\n\nIt costs more than the original version, but takes up less space and offers greater improvements.</description>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <pathCost>14</pathCost>
@@ -43,7 +43,7 @@
       <Steel>100</Steel>
       <Plasteel>25</Plasteel>
       <ComponentIndustrial>8</ComponentIndustrial>
-      <ArchotechExoticParticles MayRequire="kentington.saveourship2">1</ArchotechExoticParticles>
+      <PowerfocusChip>1</PowerfocusChip>
     </costList>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <building>
@@ -71,5 +71,58 @@
         <showMaxSimultaneous>false</showMaxSimultaneous>
       </li>
     </comps>
+  </ThingDef>
+<!--SOS2-->
+  <ThingDef MayRequire="kentington.saveourship2" ParentName="LunaGlaze_AdvancedGeneProcessor">
+    <defName>Luna_ExoticParticlesGeneProcessor</defName>
+    <label>exotic particles gene processor</label>
+    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.\n\nThis version uses archotech related to exotic particles to build the core, and its performance far exceeds that of advanced versions.</description>
+    <costList>
+      <Steel>125</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ArchotechExoticParticles>1</ArchotechExoticParticles>
+    </costList>
+    <statBases>
+      <GeneticComplexityIncrease>8</GeneticComplexityIncrease>
+    </statBases>
+    <researchPrerequisites>
+      <li>ArchotechArchites</li>
+    </researchPrerequisites>
+  </ThingDef>
+<!--anomaly-->
+  <ThingDef MayRequire="ludeon.rimworld.anomaly" ParentName="LunaGlaze_AdvancedGeneProcessor">
+    <defName>Luna_DarkArchotechGeneProcessor</defName>
+    <label>dark archotech gene processor</label>
+    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.\n\nThis version uses archotech related to shard of dark archo mind to build the core, and its performance better that of advanced versions.</description>
+    <costList Inherit="False">
+      <Steel>100</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Shard>1</Shard>
+      <Bioferrite>15</Bioferrite>
+    </costList>
+    <statBases>
+      <GeneticComplexityIncrease>6</GeneticComplexityIncrease>
+    </statBases>
+  </ThingDef>
+<!--血肉重铸-->
+  <ThingDef MayRequire="lunaglaze.Anomaly.BiotechnologyReforgedFlesh" ParentName="LunaGlaze_AdvancedGeneProcessor">
+    <defName>Luna_CrimsonArchotechGeneProcessor</defName>
+    <label>crimson archotech gene processor</label>
+    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.\n\nThis version uses flesh archotech related to crimson archocrystal to build the core, and its performance far exceeds that of advanced versions.</description>
+    <costList Inherit="False">
+      <Steel>100</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_ScarletFerrite>10</BRF_ScarletFerrite>
+    </costList>
+    <statBases>
+      <GeneticComplexityIncrease>8</GeneticComplexityIncrease>
+    </statBases>
+    <researchPrerequisites>
+      <li>BRF_ShepherdFleshResearch</li>
+    </researchPrerequisites>
   </ThingDef>
 </Defs>

@@ -4,13 +4,17 @@
     <author>幽月琉璃Luna</author>
     <supportedVersions>
         <li>1.5</li>
+        <li>1.6</li>
     </supportedVersions>
     <packageId>lunaglaze.Biotech.AdvancedGeneProcessor</packageId>
     <description>先进基因处理器mod，添加了一种占地仅单格、复杂度提升更大的高级机械超频仪，需要极致机械族科技解锁
 	[*]Added an advanced gene processor on a 1×1 cell.
 	[*]The advanced mech booster has genetic complexity increase of 3 (2 in the original) and needs to be unlocked by researching UltraMechtech.
 	[*]If you have Save Our Ship 2 installed, the machine will consume Exotic Particles to build, but the genetic complexity increase becomes 6.
-	在同时安装SOS2后将得到再一次强化。
+
+	如果你同时安装了[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1909914131] SOS2 [/url]、[url=https://store.steampowered.com/app/2380740/RimWorld__Anomaly] Anomaly [/url]或者[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3370644015] MeatCore 血肉重铸 Bio-Anomaly Flesh Reforged [/url]，你还会得到与之联动的更强大的基因处理器。
+
+	If you also have [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1909914131] SOS2 [/url]、[url=https://store.steampowered.com/app/2380740/RimWorld__Anomaly] Anomaly [/url]or[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3370644015] MeatCore 血肉重铸 Bio-Anomaly Flesh Reforged [/url] installed, you'll also get a more powerful gene processor that works with them.
 	</description>
 	<modDependencies>
 		<li>
@@ -22,6 +26,27 @@
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>lunaglaze.Anomaly.BiotechnologyReforgedFlesh</li>
 		<li>kentington.saveourship2</li>
+		<li>vanillaracesexpanded.saurid</li>
+		<li>vanillaracesexpanded.hussar</li>
+		<li>vanillaracesexpanded.genie</li>
+		<li>vanillaracesexpanded.Phytokin</li>
+		<li>vanillaracesexpanded.Sanguophage</li>
+		<li>vanillaracesexpanded.Waster</li>
+		<li>vanillaracesexpanded.Highmate</li>
+		<li>vanillaracesexpanded.Android</li>
+		<li>vanillaracesexpanded.fungoid</li>
+		<li>vanillaracesexpanded.archon</li>
+		<li>vanillaracesexpanded.lycanthrope</li>
+		<li>vanillaracesexpanded.pigskin</li>
+		<li>vanillaracesexpanded.insector</li>
+		<li>wvc.sergkart.races.biotech</li>
+		<li>sarg.alphagenes</li>
+		<li>turnovus.biotech.integratedgenes</li>
+		<li>petre27.biotechcapacitorgenes</li>
+		<li>petre27.biotechbalancedcapacitorgenes</li>
+		<li>jintuzilamian.gene.xenocosmetic</li>
 	</loadAfter>
 </ModMetaData>

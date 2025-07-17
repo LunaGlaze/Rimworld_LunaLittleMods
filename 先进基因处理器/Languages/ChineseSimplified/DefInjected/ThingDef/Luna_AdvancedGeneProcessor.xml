@@ -2,8 +2,20 @@
 <LanguageData>
 
   <Luna_AdvancedGeneProcessor.label>先进基因处理器</Luna_AdvancedGeneProcessor.label>
-  <Luna_AdvancedGeneProcessor.description>一台用于分析处理基因信息的设备。将其放置在基因装配器旁可以增加所能装配的异种胚芽基因复杂度的上限。建造多个基因处理器可进一步提高异种胚芽基因复杂度的上限。比起原有版本，其成本更高，但占地面积更小、提升更大。</Luna_AdvancedGeneProcessor.description>
+  <Luna_AdvancedGeneProcessor.description>一台用于分析处理基因信息的设备。将其放置在基因装配器旁可以增加所能装配的异种胚芽基因复杂度的上限。建造多个基因处理器可进一步提高异种胚芽基因复杂度的上限。\n\n比起原有版本，其成本更高，但占地面积更小、提升更大。</Luna_AdvancedGeneProcessor.description>
   <Luna_AdvancedGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>基因复杂度提升</Luna_AdvancedGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>
+
+  <Luna_ExoticParticlesGeneProcessor.label>异形粒子基因处理器</Luna_ExoticParticlesGeneProcessor.label>
+  <Luna_ExoticParticlesGeneProcessor.description>一台用于分析处理基因信息的设备。将其放置在基因装配器旁可以增加所能装配的异种胚芽基因复杂度的上限。建造多个基因处理器可进一步提高异种胚芽基因复杂度的上限。\n\n该版本使用了与异形粒子有关的超凡科技构筑了核心，性能远超先进版本。</Luna_ExoticParticlesGeneProcessor.description>
+  <Luna_ExoticParticlesGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>基因复杂度提升</Luna_ExoticParticlesGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>
+
+  <Luna_DarkArchotechGeneProcessor.label>暗黑超凡基因处理器</Luna_DarkArchotechGeneProcessor.label>
+  <Luna_DarkArchotechGeneProcessor.description>一台用于分析处理基因信息的设备。将其放置在基因装配器旁可以增加所能装配的异种胚芽基因复杂度的上限。建造多个基因处理器可进一步提高异种胚芽基因复杂度的上限。\n\n该版本使用了与暗黑超凡碎片有关的超凡科技构筑了核心，性能强于先进版本。</Luna_DarkArchotechGeneProcessor.description>
+  <Luna_DarkArchotechGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>基因复杂度提升</Luna_DarkArchotechGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>
+
+  <Luna_CrimsonArchotechGeneProcessor.label>血腥超凡基因处理器</Luna_CrimsonArchotechGeneProcessor.label>
+  <Luna_CrimsonArchotechGeneProcessor.description>一台用于分析处理基因信息的设备。将其放置在基因装配器旁可以增加所能装配的异种胚芽基因复杂度的上限。建造多个基因处理器可进一步提高异种胚芽基因复杂度的上限。\n\n该版本使用了与绯红超凡晶核有关的血肉超凡科技构筑了核心，性能远超先进版本。</Luna_CrimsonArchotechGeneProcessor.description>
+  <Luna_CrimsonArchotechGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>基因复杂度提升</Luna_CrimsonArchotechGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>
 
 
 </LanguageData>

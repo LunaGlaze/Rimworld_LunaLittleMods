@@ -6,6 +6,9 @@
             <xpath>Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                 <value>
                     <li>Luna_AdvancedGeneProcessor</li>
+                    <li MayRequire="kentington.saveourship2">Luna_ExoticParticlesGeneProcessor</li>
+                    <li MayRequire="ludeon.rimworld.anomaly">Luna_DarkArchotechGeneProcessor</li>
+                    <li MayRequire="lunaglaze.Anomaly.BiotechnologyReforgedFlesh">Luna_CrimsonArchotechGeneProcessor</li>
                 </value>
         </match>
     </Operation>
@@ -15,20 +18,10 @@
             <xpath>Defs/ThingDef[defName="GeneAssembler"]/descriptionHyperlinks</xpath>
                 <value>
                     <ThingDef>Luna_AdvancedGeneProcessor</ThingDef>
+                    <ThingDef MayRequire="kentington.saveourship2">Luna_ExoticParticlesGeneProcessor</ThingDef>
+                    <ThingDef MayRequire="ludeon.rimworld.anomaly">Luna_DarkArchotechGeneProcessor</ThingDef>
+                    <ThingDef MayRequire="lunaglaze.Anomaly.BiotechnologyReforgedFlesh">Luna_CrimsonArchotechGeneProcessor</ThingDef>
                 </value>
         </match>
-    </Operation>
-    <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Save Our Ship 2</li>
-		</mods>
-		<match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/statBases/GeneticComplexityIncrease</xpath>
-            <value><GeneticComplexityIncrease>6</GeneticComplexityIncrease></value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="Luna_AdvancedGeneProcessor"]/costList</xpath>
-            <value><PowerfocusChip>1</PowerfocusChip></value>
-		</nomatch>
     </Operation>
 </Patch>
