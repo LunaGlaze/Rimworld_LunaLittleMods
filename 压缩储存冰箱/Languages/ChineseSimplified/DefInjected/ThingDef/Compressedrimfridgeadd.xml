@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Luna_Compressed_D_Refrigerator.label>压缩储存冰箱</Luna_Compressed_D_Refrigerator.label>
+  <Luna_Compressed_D_Refrigerator.description>运用了压缩空间功能的大容量储存冰柜，能够储存大量物品，而且可以保鲜食物，隔热性能良好。</Luna_Compressed_D_Refrigerator.description>
+  
+  <Luna_Compressed_S_Refrigerator.label>小型压缩储存冰箱</Luna_Compressed_S_Refrigerator.label>
+  <Luna_Compressed_S_Refrigerator.description>运用了压缩空间功能的大容量储存冰柜，能够储存大量物品，而且可以保鲜食物，隔热性能良好。</Luna_Compressed_S_Refrigerator.description>
+  
+  <Luna_Compressed_Q_Refrigerator.label>大型压缩储存冰箱</Luna_Compressed_Q_Refrigerator.label>
+  <Luna_Compressed_Q_Refrigerator.description>运用了压缩空间功能的大容量储存冰柜，能够储存大量物品，而且可以保鲜食物，隔热性能良好。</Luna_Compressed_Q_Refrigerator.description>
+
+</LanguageData>

@@ -14,7 +14,7 @@ Or if you're a user in mainland China and can't register for GitHub, you can joi
 ## WorkShop
  - [超凡机械研究员](https://steamcommunity.com/sharedfiles/filedetails/?id=3258950619)
 
- - [Luna's Compressed Refrigerator(压缩深度储存冰箱)](https://steamcommunity.com/sharedfiles/filedetails/?id=3270161119)
+ - [Luna's Compressed Refrigerator(压缩储存冰箱)](https://steamcommunity.com/sharedfiles/filedetails/?id=3531580191)
 
  - [Luna's Compressed Simple Storage(压缩简单储存)](https://steamcommunity.com/sharedfiles/filedetails/?id=3270796885)
 

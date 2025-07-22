@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>Luna的压缩深度储存冰箱</name>
+	<name>LunaCompressedRimfridge|压缩储存冰箱</name>
     <author>幽月琉璃Luna</author>
 	<supportedVersions>
-        <li>1.5</li>
+        <li>1.6</li>
 	</supportedVersions>
-	<description>添加了能够储存更多食物的深度储存冰箱</description>
-	<packageId>lunaglaze.rimfridge.lwmds.add</packageId>
+	<description>添加了能够储存更多食物的大容量储存冰箱\n\nAdded a large storage refrigerator that can store more food</description>
+	<packageId>lunaglaze.rimfridge.compressed.add</packageId>
+	<url>https://github.com/LunaGlaze/Rimworld_LunaLittleMods</url>
 <modDependencies>
     <li>
         <packageId>brrainz.harmony</packageId>
@@ -18,17 +19,15 @@
 	<li>
 	    <displayName>[KV] RimFridge</displayName>
         <packageId>rimfridge.kv.rw</packageId>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2898411376</steamWorkshopUrl>
 	</li>
-	  <li>
-	    <displayName>LWM's Deep Storage</displayName>
-		<packageId>LWM.DeepStorage</packageId>
-		<steamWorkshopUrl>steam://url/CommunityFilePage/1617282896</steamWorkshopUrl>
-	  </li>
 </modDependencies>
 <loadAfter>
   <li>brrainz.harmony</li>
   <li>Ludeon.RimWorld.Core</li><!-- Don't ask why this needs to be here. Just accept -->
   <li>rimfridge.kv.rw</li>
-  <li>LWM.DeepStorage</li>
 </loadAfter>
+  <incompatibleWith>
+    <li>lunaglaze.rimfridge.lwmds.add</li>
+  </incompatibleWith>
 </ModMetaData>

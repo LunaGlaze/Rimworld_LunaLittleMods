@@ -7,7 +7,7 @@
   
 <!-- 研究 -->
   <ResearchProjectDef>
-    <defName>Luna_LWMrimfridgeadd</defName>
+    <defName>Luna_Compressedrimfridgeadd</defName>
     <label>Compressed Refrigerator</label>
     <description>A technique for deep storage of refrigerated items using compression technology.</description>
 	<prerequisites>
