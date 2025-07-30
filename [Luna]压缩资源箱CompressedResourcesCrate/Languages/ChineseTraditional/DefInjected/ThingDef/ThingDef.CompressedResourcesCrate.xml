@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <LCRC_WoodenResourcesCrate.label>緊湊資源箱</LCRC_WoodenResourcesCrate.label>
+  <LCRC_WoodenResourcesCrate.description>可以儲存45堆資源</LCRC_WoodenResourcesCrate.description>
+  
+  <LCRC_WoodenResourcesCrate_ComponentIndustrial.label>零部件緊湊資源箱</LCRC_WoodenResourcesCrate_ComponentIndustrial.label>
+  <LCRC_WoodenResourcesCrate_ComponentIndustrial.description>可以儲存45堆零部件</LCRC_WoodenResourcesCrate_ComponentIndustrial.description>
+  
+  <LCRC_WoodenResourcesCrate_ComponentSpacer.label>高級零部件緊湊資源箱</LCRC_WoodenResourcesCrate_ComponentSpacer.label>
+  <LCRC_WoodenResourcesCrate_ComponentSpacer.description>可以儲存45堆高級零部件</LCRC_WoodenResourcesCrate_ComponentSpacer.description>
+  
+  <LCRC_WoodenResourcesCrate_Cloth.label>織物緊湊資源箱</LCRC_WoodenResourcesCrate_Cloth.label>
+  <LCRC_WoodenResourcesCrate_Cloth.description>可以儲存45堆織物與毛料</LCRC_WoodenResourcesCrate_Cloth.description>
+  
+  <LCRC_WoodenResourcesCrate_Leather.label>皮革緊湊資源箱</LCRC_WoodenResourcesCrate_Leather.label>
+  <LCRC_WoodenResourcesCrate_Leather.description>可以儲存45堆皮革</LCRC_WoodenResourcesCrate_Leather.description>
+  
+  <LCRC_WoodenResourcesCrate_StoneBlocks.label>石磚緊湊資源箱</LCRC_WoodenResourcesCrate_StoneBlocks.label>
+  <LCRC_WoodenResourcesCrate_StoneBlocks.description>可以儲存45堆石磚</LCRC_WoodenResourcesCrate_StoneBlocks.description>
+  
+  <LCRC_WoodenResourcesCrate_Chemfuel.label>化合燃料緊湊資源箱</LCRC_WoodenResourcesCrate_Chemfuel.label>
+  <LCRC_WoodenResourcesCrate_Chemfuel.description>可以儲存45堆化合燃料。與明火接觸是極度危險的。</LCRC_WoodenResourcesCrate_Chemfuel.description>
+
+  <LCRC_MetalResourcesCrate.label>壓縮資源箱</LCRC_MetalResourcesCrate.label>
+  <LCRC_MetalResourcesCrate.description>可以儲存125堆資源</LCRC_MetalResourcesCrate.description>
+  
+  <LCRC_MetalResourcesCrate_ComponentIndustrial.label>零部件壓縮資源箱</LCRC_MetalResourcesCrate_ComponentIndustrial.label>
+  <LCRC_MetalResourcesCrate_ComponentIndustrial.description>可以儲存125堆零部件</LCRC_MetalResourcesCrate_ComponentIndustrial.description>
+  
+  <LCRC_MetalResourcesCrate_ComponentSpacer.label>高級零部件壓縮資源箱</LCRC_MetalResourcesCrate_ComponentSpacer.label>
+  <LCRC_MetalResourcesCrate_ComponentSpacer.description>可以儲存125堆高級零部件</LCRC_MetalResourcesCrate_ComponentSpacer.description>
+  
+  <LCRC_MetalResourcesCrate_Cloth.label>織物壓縮資源箱</LCRC_MetalResourcesCrate_Cloth.label>
+  <LCRC_MetalResourcesCrate_Cloth.description>可以儲存125堆織物與毛料</LCRC_MetalResourcesCrate_Cloth.description>
+  
+  <LCRC_MetalResourcesCrate_Leather.label>皮革壓縮資源箱</LCRC_MetalResourcesCrate_Leather.label>
+  <LCRC_MetalResourcesCrate_Leather.description>可以儲存125堆皮革</LCRC_MetalResourcesCrate_Leather.description>
+  
+  <LCRC_MetalResourcesCrate_StoneBlocks.label>石磚壓縮資源箱</LCRC_MetalResourcesCrate_StoneBlocks.label>
+  <LCRC_MetalResourcesCrate_StoneBlocks.description>可以儲存125堆石磚</LCRC_MetalResourcesCrate_StoneBlocks.description>
+  
+  <LCRC_MetalResourcesCrate_Chemfuel.label>化合燃料壓縮資源箱</LCRC_MetalResourcesCrate_Chemfuel.label>
+  <LCRC_MetalResourcesCrate_Chemfuel.description>可以儲存125堆化合燃料。與明火接觸是極度危險的。</LCRC_MetalResourcesCrate_Chemfuel.description>
+
+</LanguageData>

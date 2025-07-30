@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>LunaCompressedRimfridge|压缩储存冰箱</name>
+	<name>[Luna]压缩储存冰箱CompressedRimfridge</name>
     <author>幽月琉璃Luna</author>
 	<supportedVersions>
         <li>1.6</li>
 	</supportedVersions>
-	<description>添加了能够储存更多食物的大容量储存冰箱\n\nAdded a large storage refrigerator that can store more food</description>
+	<modVersion>1.0.0</modVersion>
+	<description>添加了能够储存更多食物的大容量储存冰箱\n\nAdded a large storage refrigerator that can store more food
+[h1]Links|连结[/h1][list]
+[*] [url=https://github.com/LunaGlaze/Rimworld_LunaLittleMods] Github [/url]
+[*] [url=https://patreon.com/shiqiluna] Patreon [/url](I probably don't use it that often)
+[*] [url=https://afdian.com/a/shiqiluna] 爱发电 [/url](Available to Chinese users)
+[/list]
+[img]https://www.img520.com/n7NlQ5.jpg[/img]</description>
 	<packageId>lunaglaze.rimfridge.compressed.add</packageId>
 	<url>https://github.com/LunaGlaze/Rimworld_LunaLittleMods</url>
 <modDependencies>

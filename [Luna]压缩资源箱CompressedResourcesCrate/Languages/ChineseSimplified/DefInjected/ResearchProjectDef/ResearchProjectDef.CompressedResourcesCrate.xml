@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <LunaCRC_CompactResourcesCrate.label>紧凑资源箱</LunaCRC_CompactResourcesCrate.label>
+  <LunaCRC_CompactResourcesCrate.description>用紧凑的空间和方式储存大量单一种类资源。</LunaCRC_CompactResourcesCrate.description>
+
+  <LunaCRC_CompressedResourcesCrate.label>压缩资源箱</LunaCRC_CompressedResourcesCrate.label>
+  <LunaCRC_CompressedResourcesCrate.description>将大量同类资源以更紧凑的空间和压缩方式进行存储。这种资源箱更加耐用，且具有更大的存储容量。</LunaCRC_CompressedResourcesCrate.description>
+
+</LanguageData>

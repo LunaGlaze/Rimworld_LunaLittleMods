@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <StuffCategoryDef>
+    <defName>LCRC_CanMakeResourcesCrate</defName>
+    <label>can make resources crate</label>
+    <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+    <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+  </StuffCategoryDef>
+  
+  <!-- ==================== ResourcesCrate Base ==================== -->
+
+  <ThingDef Name="LCRC_AddResourcesCrateBase" ParentName="AdaptiveStorageBase" Abstract="True">
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>320</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>7.5</Mass>
+    </statBases>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <costList>
+      <WoodLog>74</WoodLog>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>LCRC_CanMakeResourcesCrate</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <rotatable>false</rotatable>
+    <fillPercent>0.8</fillPercent>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>45</maxItemsInCell>
+      <fixedStorageSettings>
+        <filter>
+            <categories>
+                <li>Root</li>
+            </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+            <categories>
+                <li>Root</li>
+            </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+        <li>BuildingsFurniture</li>
+    </thingCategories>
+    <!--researchPrerequisites>
+        <li>LunaCSS_CompactResourcesCrate</li>
+    </researchPrerequisites-->
+  </ThingDef>
+
+    <!-- ==================== ResourcesCrate Wooden ==================== -->
+
+  <ThingDef ParentName="LCRC_AddResourcesCrateBase" Name="LCRC_WoodenResourcesCrateBase">
+    <defName>LCRC_WoodenResourcesCrate</defName>
+    <label>Compact Resources Crate</label>
+    <description>Can Storage up to 45 Stack of Resources</description>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrateType_other</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrateType_other</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <building>
+      <paintable>true</paintable>
+    </building>
+        <researchPrerequisites>
+            <li>LunaCRC_CompactResourcesCrate</li>
+        </researchPrerequisites>
+      <modExtensions>
+          <li Class="AdaptiveStorage.Extension">
+        <lockStorageSettingsToStuff>true</lockStorageSettingsToStuff>
+        <labelFormat>StuffAsNoun</labelFormat>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>LCRC_LunaAddWoodenResourcesCrate</defName>
+    <label>Compact Resources Crate</label>
+  </DesignatorDropdownGroupDef>
+
+  <ThingDef ParentName="LCRC_WoodenResourcesCrateBase">
+    <defName>LCRC_WoodenResourcesCrate_ComponentIndustrial</defName>
+    <label>Component Compact Resources Crate</label>
+    <description>Can Storage up to 45 Stack of component</description>
+        <designatorDropdown>LCRC_LunaAddWoodenResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_componentIndustrial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_componentIndustrial</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <WoodLog>125</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <thingDefs>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="LCRC_WoodenResourcesCrateBase">
+    <defName>LCRC_WoodenResourcesCrate_ComponentSpacer</defName>
+    <label>Advanced Component Compact Resources Crate</label>
+    <description>Can Storage up to 45 Stack of advanced component</description>
+        <designatorDropdown>LCRC_LunaAddWoodenResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_componentSpacer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_componentSpacer</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <WoodLog>125</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <thingDefs>
+                <li>ComponentSpacer</li>
+            </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="LCRC_WoodenResourcesCrateBase">
+    <defName>LCRC_WoodenResourcesCrate_Cloth</defName>
+    <label>Textiles Compact Resources Crate</label>
+    <description>Can Storage up to 45 Stack of cloth</description>
+        <designatorDropdown>LCRC_LunaAddWoodenResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_cloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_cloth</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <WoodLog>125</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <categories>
+                <li>Textiles</li>
+            </categories>
+            <disallowedCategories>
+                <li>Leathers</li>
+            </disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="LCRC_WoodenResourcesCrateBase">
+    <defName>LCRC_WoodenResourcesCrate_Leather</defName>
+    <label>Leathers Compact Resources Crate</label>
+    <description>Can Storage up to 45 Stack of leather</description>
+        <designatorDropdown>LCRC_LunaAddWoodenResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_leather</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_leather</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <WoodLog>125</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="LCRC_WoodenResourcesCrateBase">
+    <defName>LCRC_WoodenResourcesCrate_StoneBlocks</defName>
+    <label>Stone Blocks Compact Resources Crate</label>
+    <description>Can Storage up to 45 Stack of stone blocks</description>
+        <designatorDropdown>LCRC_LunaAddWoodenResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_stoneBlocks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_stoneBlocks</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <WoodLog>125</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+ 
+  <ThingDef ParentName="LCRC_WoodenResourcesCrateBase">
+    <defName>LCRC_WoodenResourcesCrate_Chemfuel</defName>
+    <label>Chemfuel Compact Resources Crate</label>
+    <description>Can Storage up to 45 Stack of chemfuel. Contact with open flames is extremely dangerous.</description>
+        <designatorDropdown>LCRC_LunaAddWoodenResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_chemfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_chemfuel</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <WoodLog>125</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <thingDefs>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+
+    <!-- ==================== ResourcesCrate Metal ==================== -->
+
+  <ThingDef ParentName="LCRC_AddResourcesCrateBase" Name="LCRC_MetalResourcesCrateBase">
+    <defName>LCRC_MetalResourcesCrate</defName>
+    <label>Compressed Resources Crate</label>
+    <description>Can Storage up to 50 Stack of Resources</description>
+    <statBases>
+      <MaxHitPoints>1250</MaxHitPoints>
+      <WorkToBuild>5750</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>12</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/MetalResourcesCrateType_other</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrateType_other</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <building>
+      <paintable>true</paintable>
+      <maxItemsInCell>125</maxItemsInCell>
+    </building>
+    <costList Inherit="False">
+      <Steel>99</Steel>
+    </costList>
+        <researchPrerequisites Inherit="False">
+            <li>LunaCRC_CompressedResourcesCrate</li>
+        </researchPrerequisites>
+      <modExtensions>
+          <li Class="AdaptiveStorage.Extension">
+        <lockStorageSettingsToStuff>true</lockStorageSettingsToStuff>
+        <labelFormat>StuffAsNoun</labelFormat>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>LCRC_LunaAddMetalResourcesCrate</defName>
+    <label>Compressed Resources Crate</label>
+  </DesignatorDropdownGroupDef>
+
+  <ThingDef ParentName="LCRC_MetalResourcesCrateBase">
+    <defName>LCRC_MetalResourcesCrate_ComponentIndustrial</defName>
+    <label>Component Compressed Resources Crate</label>
+    <description>Can Storage up to 50 Stack of component</description>
+        <designatorDropdown>LCRC_LunaAddMetalResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_componentIndustrial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_componentIndustrial</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <thingDefs>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="LCRC_MetalResourcesCrateBase">
+    <defName>LCRC_MetalResourcesCrate_ComponentSpacer</defName>
+    <label>Advanced Component Compressed Resources Crate</label>
+    <description>Can Storage up to 50 Stack of advanced component</description>
+        <designatorDropdown>LCRC_LunaAddMetalResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_componentSpacer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_componentSpacer</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <thingDefs>
+                <li>ComponentSpacer</li>
+            </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="LCRC_MetalResourcesCrateBase">
+    <defName>LCRC_MetalResourcesCrate_Cloth</defName>
+    <label>Textiles Compressed Resources Crate</label>
+    <description>Can Storage up to 50 Stack of cloth</description>
+        <designatorDropdown>LCRC_LunaAddMetalResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_cloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_cloth</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <categories>
+                <li>Textiles</li>
+            </categories>
+            <disallowedCategories>
+                <li>Leathers</li>
+            </disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="LCRC_MetalResourcesCrateBase">
+    <defName>LCRC_MetalResourcesCrate_Leather</defName>
+    <label>Leathers Compressed Resources Crate</label>
+    <description>Can Storage up to 50 Stack of leather</description>
+        <designatorDropdown>LCRC_LunaAddMetalResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_leather</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_leather</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="LCRC_MetalResourcesCrateBase">
+    <defName>LCRC_MetalResourcesCrate_StoneBlocks</defName>
+    <label>Stone Blocks Compressed Resources Crate</label>
+    <description>Can Storage up to 50 Stack of stone blocks</description>
+        <designatorDropdown>LCRC_LunaAddMetalResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_stoneBlocks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_stoneBlocks</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+ 
+  <ThingDef ParentName="LCRC_MetalResourcesCrateBase">
+    <defName>LCRC_MetalResourcesCrate_Chemfuel</defName>
+    <label>Chemfuel Compressed Resources Crate</label>
+    <description>Can Storage up to 125 Stack of chemfuel. Contact with open flames is extremely dangerous.</description>
+        <designatorDropdown>LCRC_LunaAddMetalResourcesCrate</designatorDropdown>
+    <graphicData>
+      <texPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_chemfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_chemfuel</uiIconPath>
+    <costStuffCount IsNull="True" />
+    <stuffCategories IsNull="True" />
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+            <thingDefs>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+      <modExtensions Inherit="False" />
+  </ThingDef>
+
+</Defs>

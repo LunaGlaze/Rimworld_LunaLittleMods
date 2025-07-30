@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>[Luna]压缩资源箱CompressedResourcesCrate</name>
+    <author>幽月琉璃Luna</author>
+	<supportedVersions>
+        <li>1.6</li>
+	</supportedVersions>
+	<modVersion>1.0.0</modVersion>
+	<description>[h1]Describe 描述[/h1]
+Added resource crates that can store large quantities of a single type of item, theoretically compatible with all mod materials. 添加了能够储存大量单种物品的资源箱，理论可兼容所有mod材料。
+[h1]Explain 说明[/h1]
+It was inspired by similar devices in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3270161119][JDS] Simple Storage[/url]. After [JDS] Simple Storage deleted its content and drastically reduced the data, I created a mod using [JDS] Simple Storage's texture assets to restore them. Now I have repainted these containers, separated the resource crates from them, and used the Adaptive Storage Framework's mechanism to try to make it compatible with any new materials added by the mod.
+其灵感来自于[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3270161119] [JDS] Simple Storage [/url]中的同类设备，在[JDS] Simple Storage删除其内容并大幅度削减数据后，我使用[JDS] Simple Storage的纹理资源创建了一个mod来还原它们。现在我重新绘制了这些容器，将资源箱从中分离出来，并使用Adaptive Storage Framework的机制尝试让他能够兼容任何mod添加的新材料。
+[h1]Content 内容[/h1]
+Added a variety of resource crates. The first type can store basic resources of any metal or wood material. You can use any of these materials as building materials and combine them with other materials to construct a box that can only store items of this type.
+添加了多种资源箱，第一类可以储存任意金属或木头材质的基础资源，你可以以任何一个该种材料为建材搭配其他材料构造一个仅能储存该种物品的箱子。
+The second type can store:
+第二种分别可以储存：
+[list]
+[*] Component 零部件
+[*] Advanced Component 高级零部件
+[*] Any Textiles or Wools 任意织物或毛料
+[*] Any Leathers 任意皮革
+[*] Any StoneBlocks 任意石砖
+[*] Chemfuel 化合燃料
+[/list]
+Each chest has two levels, each requiring different technologies to unlock. The smaller one has a capacity of 45, and the larger one has a capacity of 125. All of those just need only 1 cell.
+其中每种箱子都有两个等级，需要不同的科技解锁。较小的有45容量，较大的有125容量。它们都只占地1格。
+[h1]Balance 平衡性[/h1]
+These chests can only store a single type of basic resource and require more materials to build. This is designed to accommodate the cramped space on the Odyssey ship, which I think is reasonable enough since you'll still need other, smaller containers to hold items beyond the basic resources.
+这些箱子只能储存单种类的基础资源，并且需要较多的材料去建造。这是为了奥德赛飞船狭窄的空间而设计的，我认为这足够合理，因为你仍需要其他没有那么大的容器去装在基础资源之外的物品。
+If you feel the default values are not suitable for you, you can change them in-game using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3530785055] Adaptive Storage - Global Settings[/url].
+如果你觉得默认的数值不适合你，你可以使用[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3530785055] Adaptive Storage - Global Settings [/url]在游戏中更改它们。
+[h1]Compatibility 兼容性[/h1]
+Theoretically, all metal and wood materials, as well as the resources mentioned above that meet the second resource box type, can be placed in the containers provided by this mod. Since materials that are only stone-based are usually also StoneBlocks, there is no special configuration for them (except for jade).
+理论上所有金属与木头材质的材料和上文所提及的符合第二种资源箱类型的资源都可以装入本mod提供的容器中。由于仅属于石质的材料通常也属于石砖，使用没有专门为其进行配置（除了翡翠也被支持之外）。
+If a material is not included in this logic, it can be made possible to create resource crates by adding the LCRC_CanMakeResourcesCrate entry to the categories in its stuffProps using PatchOperation.
+如果某种材料不处于这个逻辑之中，使用PatchOperation为其stuffProps中的categories添加LCRC_CanMakeResourcesCrate条目可以使其变得可以创建资源箱。
+Assets from vanilla and some mods have their own unique textures, while others will be tints of the default textures (wood has a different base texture than other types).
+来自原版与一些mod的资源有自己的独特纹理，而其他的则会是默认纹理的染色（木材与其他类型具有不同的基础纹理）。
+Here is a list of mods with unique texture support:
+以下是具有独特纹理支持的模组列表：
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3370644015] MeatCore 血肉重铸 Bio-Anomaly Flesh Reforged [/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1841354677] Alpha Biomes [/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856] Alpha Animals [/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3221850511] 华夏扩展 Chinese Comprehensive Expansion [/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3532501549] [TW1.6]幻彩林地 Rainbow forest [/url]
+[/list]
+[h1]Links|连结[/h1][list]
+[*] [url=https://github.com/LunaGlaze/Rimworld_LunaLittleMods] Github [/url]
+[*] [url=https://patreon.com/shiqiluna] Patreon [/url](I probably don't use it that often)
+[*] [url=https://afdian.com/a/shiqiluna] 爱发电 [/url](Available to Chinese users)
+[/list]
+[img]https://www.img520.com/n7NlQ5.jpg[/img]</description>
+	<packageId>lunaglaze.asf.CompressedResourcesCrate</packageId>
+	<url>https://github.com/LunaGlaze/Rimworld_LunaLittleMods</url>
+	<modDependencies>
+		<li>
+			<packageId>adaptive.storage.framework</packageId>
+			<displayName>Adaptive Storage Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359</steamWorkshopUrl>
+			<downloadUrl>https://github.com/bbradson/Adaptive-Storage-Framework</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+  		<li>Ludeon.RimWorld.Core</li>
+		<li>ludeon.rimworld.Anomaly</li>
+    	<li>Ludeon.RimWorld.Odyssey</li>
+  		<li>adaptive.storage.framework</li>
+	</loadAfter>
+</ModMetaData>
