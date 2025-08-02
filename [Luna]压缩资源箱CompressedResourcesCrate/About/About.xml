@@ -6,7 +6,7 @@
 	<supportedVersions>
         <li>1.6</li>
 	</supportedVersions>
-	<modVersion>1.0.0</modVersion>
+	<modVersion>1.0.1</modVersion>
 	<description>[h1]Describe 描述[/h1]
 Added resource crates that can store large quantities of a single type of item, theoretically compatible with all mod materials. 添加了能够储存大量单种物品的资源箱，理论可兼容所有mod材料。
 [h1]Explain 说明[/h1]

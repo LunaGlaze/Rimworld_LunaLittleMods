@@ -21,6 +21,8 @@
     </statBases>
     <castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
+    <mineable>false</mineable>
+    <generateCommonality>0</generateCommonality>
     <costList>
       <WoodLog>74</WoodLog>
     </costList>
@@ -107,8 +109,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_componentIndustrial</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <WoodLog>125</WoodLog>
     </costList>
@@ -136,8 +138,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_componentSpacer</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <WoodLog>125</WoodLog>
     </costList>
@@ -165,8 +167,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_cloth</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <WoodLog>125</WoodLog>
     </costList>
@@ -197,8 +199,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_leather</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <WoodLog>125</WoodLog>
     </costList>
@@ -226,8 +228,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_stoneBlocks</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <WoodLog>125</WoodLog>
     </costList>
@@ -256,8 +258,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/WoodenResourcesCrate_chemfuel</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <WoodLog>125</WoodLog>
     </costList>
@@ -330,8 +332,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_componentIndustrial</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <Steel>100</Steel>
     </costList>
@@ -359,8 +361,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_componentSpacer</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <Steel>100</Steel>
     </costList>
@@ -388,8 +390,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_cloth</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <Steel>100</Steel>
     </costList>
@@ -420,8 +422,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_leather</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <Steel>100</Steel>
     </costList>
@@ -449,8 +451,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_stoneBlocks</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <Steel>100</Steel>
     </costList>
@@ -479,8 +481,8 @@
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Luna_CRC/ResourcesCrate/MetalResourcesCrate_chemfuel</uiIconPath>
-    <costStuffCount IsNull="True" />
-    <stuffCategories IsNull="True" />
+    <costStuffCount Inherit="False" />
+    <stuffCategories Inherit="False"/>
     <costList>
       <Steel>100</Steel>
     </costList>
