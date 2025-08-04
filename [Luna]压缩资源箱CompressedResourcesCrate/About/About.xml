@@ -6,7 +6,7 @@
 	<supportedVersions>
         <li>1.6</li>
 	</supportedVersions>
-	<modVersion>1.0.1</modVersion>
+	<modVersion>1.0.2</modVersion>
 	<description>[h1]Describe 描述[/h1]
 Added resource crates that can store large quantities of a single type of item, theoretically compatible with all mod materials. 添加了能够储存大量单种物品的资源箱，理论可兼容所有mod材料。
 [h1]Explain 说明[/h1]
@@ -52,8 +52,7 @@ Here is a list of mods with unique texture support:
 [*] [url=https://github.com/LunaGlaze/Rimworld_LunaLittleMods] Github [/url]
 [*] [url=https://patreon.com/shiqiluna] Patreon [/url](I probably don't use it that often)
 [*] [url=https://afdian.com/a/shiqiluna] 爱发电 [/url](Available to Chinese users)
-[/list]
-[img]https://www.img520.com/n7NlQ5.jpg[/img]</description>
+[/list]</description>
 	<packageId>lunaglaze.asf.CompressedResourcesCrate</packageId>
 	<url>https://github.com/LunaGlaze/Rimworld_LunaLittleMods</url>
 	<modDependencies>

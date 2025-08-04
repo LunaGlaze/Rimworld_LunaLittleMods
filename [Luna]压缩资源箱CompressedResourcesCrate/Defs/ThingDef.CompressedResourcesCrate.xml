@@ -38,13 +38,14 @@
       <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <maxItemsInCell>45</maxItemsInCell>
-      <fixedStorageSettings>
+      <fixedStorageSettings />
+      <!--fixedStorageSettings>
         <filter>
             <categories>
                 <li>Root</li>
             </categories>
         </filter>
-      </fixedStorageSettings>
+      </fixedStorageSettings-->
       <defaultStorageSettings>
         <filter>
             <categories>
